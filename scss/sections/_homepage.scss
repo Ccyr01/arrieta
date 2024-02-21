@@ -2,6 +2,9 @@
 .home {
   color: $primary;
   background-color: $primary;
+
+  //Video Stuff------------------------
+
   #video_container {
     position: relative;
     //padding-top: 231px;
@@ -29,6 +32,7 @@
     //   }
   }
   #overlay {
+    padding: 0 5rem;
     position: absolute;
     top: 70px;
     left: 0;
@@ -39,13 +43,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff; /* Text color */
+    color: #fff;
     > div {
-      background-color: rgba(255,255,255, 0.35);
+      background-color: rgba(255, 255, 255, 0.35);
       max-width: 80%;
       padding: 15px;
       @include media-breakpoint-down(sm) {
         background-color: rgba(255, 255, 255, 0.1);
+        padding: 0;
+        max-width: 100%;
       }
     }
   }
@@ -69,7 +75,6 @@
     a {
       color: $header-color;
       @include media-breakpoint-down(sm) {
-        display: none;
         font-size: medium;
         margin-top: 0px;
         padding-top: 0;
@@ -81,13 +86,13 @@
           font-size: small;
         }
       }
-      .fa-phone{
-        color:$secondary;
+      .fa-phone {
+        color: $secondary;
       }
     }
-    .phone{
+    .phone {
       text-decoration: none;
-      color:$header-color;
+      color: $header-color;
       font-weight: 700;
     }
   }
@@ -107,10 +112,8 @@
   .navbar-brand img {
     height: 50px;
   }
-  .form-section {
-    background-color: $primary;
-    padding: 0 5rem;
-  }
+
+  // types of insurance
   #types-of-insurance {
     background-color: $primary;
 
@@ -118,6 +121,10 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-top: 30px;
+      @media screen and (max-width: 460px) {
+        width: 100%;
+      }
     }
     ul li a {
       color: $header-color;
@@ -133,32 +140,163 @@
       color: $secondary;
     }
   }
-  /* styles.css */
+  //form----------------------------------------
+  .form-section {
+    background-color: $primary;
+    padding: 0 5rem;
+    width:100%;
+    @include media-breakpoint-up(lg) {
+      font-size: large;
+      padding: 0 10rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: medium;
+      padding: 0 2rem;
+    }
+    form{
+      margin-top: 5rem;
+    }
+    h2{
+      justify-content: center;
+    }
+  }
 
-.fixed-icons {
-  position: fixed;
-  top: 50%;
-  left: 10px; /* Adjust the right distance as needed */
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* filing a claim-------------------------*/
+
+  .filing-a-claim {
+    background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filing-a-claim-div {
+    width: 50%;
+    text-align: center;
+    p {
+      color: white;
+    }
+    a {
+      color: $header-color;
+      text-decoration: none;
+    }
+    h2 {
+      color: $header-color;
+    }
+  }
+
+  //Serving el paso section---------------------------
+
+  .serving-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/elpaso.jpg");
+    height: 600px;
+    @include media-breakpoint-down(sm) {
+      background-position: right;
+      background-size: cover;
+    }
+    #overlay2 {
+      padding: 0 5rem;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-color: $overlay2;
+      max-width: 80%;
+      padding: 15px;
+      a {
+        align-items: center;
+        border: solid 3px $secondary;
+        color: $secondary;
+      }
+      a:hover {
+        color: white;
+        background-color: $secondary;
+        transition: background-color 0.9s ease, color 0.9s ease;
+      }
+    }
+    h2 {
+      width: 100%;
+      max-width: 400px;
+      color: white;
+    }
+    p {
+      text-align: center;
+      color: white;
+    }
+    a {
+      margin-bottom: 30px;
+      border: $secondary;
+    }
+  }
+
+  //Fixed Icons----------------------------------
+  .fixed-icons {
+    position: fixed;
+    top: 50%;
+    left: 10px; /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Style the icons as needed */
+  .fixed-icons i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white; /* Adjust the color as needed */
+  }
+
+  /* Optional: Add hover effects or animations */
+  .fixed-icons i:hover {
+    color: #ff0000; /* Change color on hover */
+  }
+  //CARDS--------------------------------
+  .card-box {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e1941;
+
+
+    .card {
+      width: 100%;
+      background-color: #0e1941;
+      margin-bottom: 1rem;
+      border: solid $secondary 3px;
+      padding: 1rem;
+      box-sizing: border-box;
+      @include media-breakpoint-down(lg) {
+        width: 32rem !important;
+      }
+      @include media-breakpoint-down(md) {
+        width: 25rem !important;
+      }
+      @include media-breakpoint-down(md) {
+        width: 18rem !important;
+      }
+    }
+    .card-body{
+      h5{
+        color: $secondary;
+      }
+      p{
+        color:white;
+      }
+    }
+  }
 }
-
-/* Style the icons as needed */
-.fixed-icons i {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: white; /* Adjust the color as needed */
-}
-
-/* Optional: Add hover effects or animations */
-.fixed-icons i:hover {
-  color: #ff0000; /* Change color on hover */
-}
-
-}
-
 iframe {
   aspect-ratio: 16 / 9;
 }

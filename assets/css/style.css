@@ -11951,7 +11951,7 @@ nav .container {
 .home {
   color: #0033a0;
   background-color: #0033a0;
-  /* styles.css */
+  /* filing a claim-------------------------*/
   /* Style the icons as needed */
   /* Optional: Add hover effects or animations */
 }
@@ -11963,6 +11963,7 @@ nav .container {
   z-index: 0;
 }
 .home #overlay {
+  padding: 0 5rem;
   position: absolute;
   top: 70px;
   left: 0;
@@ -11973,7 +11974,7 @@ nav .container {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff; /* Text color */
+  color: #fff;
 }
 .home #overlay > div {
   background-color: rgba(255, 255, 255, 0.35);
@@ -11983,6 +11984,8 @@ nav .container {
 @media (max-width: 575.98px) {
   .home #overlay > div {
     background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    max-width: 100%;
   }
 }
 .home #overlay h2 {
@@ -12009,7 +12012,6 @@ nav .container {
 }
 @media (max-width: 575.98px) {
   .home #overlay a {
-    display: none;
     font-size: medium;
     margin-top: 0px;
     padding-top: 0;
@@ -12044,10 +12046,6 @@ nav .container {
 .home .navbar-brand img {
   height: 50px;
 }
-.home .form-section {
-  background-color: #0033a0;
-  padding: 0 5rem;
-}
 .home #types-of-insurance {
   background-color: #0033a0;
 }
@@ -12055,6 +12053,12 @@ nav .container {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 460px) {
+  .home #types-of-insurance .oscar {
+    width: 100%;
+  }
 }
 .home #types-of-insurance ul li a {
   color: #45bce5;
@@ -12068,6 +12072,102 @@ nav .container {
 }
 .home #types-of-insurance .highlighted-text:hover {
   color: #ed7766;
+}
+.home .form-section {
+  background-color: #0033a0;
+  padding: 0 5rem;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .home .form-section {
+    font-size: large;
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .home .form-section {
+    font-size: medium;
+    padding: 0 2rem;
+  }
+}
+.home .form-section form {
+  margin-top: 5rem;
+}
+.home .form-section h2 {
+  justify-content: center;
+}
+.home .filing-a-claim {
+  background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .filing-a-claim-div {
+  width: 50%;
+  text-align: center;
+}
+.home .filing-a-claim-div p {
+  color: white;
+}
+.home .filing-a-claim-div a {
+  color: #45bce5;
+  text-decoration: none;
+}
+.home .filing-a-claim-div h2 {
+  color: #45bce5;
+}
+.home .serving-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/elpaso.jpg");
+  height: 600px;
+}
+@media (max-width: 575.98px) {
+  .home .serving-container {
+    background-position: right;
+    background-size: cover;
+  }
+}
+.home .serving-container #overlay2 {
+  padding: 0 5rem;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 51, 160, 0.2);
+  max-width: 80%;
+  padding: 15px;
+}
+.home .serving-container #overlay2 a {
+  align-items: center;
+  border: solid 3px #ed7766;
+  color: #ed7766;
+}
+.home .serving-container #overlay2 a:hover {
+  color: white;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+.home .serving-container h2 {
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+.home .serving-container p {
+  text-align: center;
+  color: white;
+}
+.home .serving-container a {
+  margin-bottom: 30px;
+  border: #ed7766;
 }
 .home .fixed-icons {
   position: fixed;
@@ -12085,6 +12185,43 @@ nav .container {
 }
 .home .fixed-icons i:hover {
   color: #ff0000; /* Change color on hover */
+}
+.home .card-box {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e1941;
+}
+.home .card-box .card {
+  width: 100%;
+  background-color: #0e1941;
+  margin-bottom: 1rem;
+  border: solid #ed7766 3px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+@media (max-width: 991.98px) {
+  .home .card-box .card {
+    width: 32rem !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .home .card-box .card {
+    width: 25rem !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .home .card-box .card {
+    width: 18rem !important;
+  }
+}
+.home .card-box .card-body h5 {
+  color: #ed7766;
+}
+.home .card-box .card-body p {
+  color: white;
 }
 
 iframe {
