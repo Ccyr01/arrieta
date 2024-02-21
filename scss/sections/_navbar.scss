@@ -1,0 +1,79 @@
+@use "../custom" as *;
+
+#navbarNav {
+  gap: 20px;
+}
+.menu {
+  li {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $black !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}
+.navbar {
+  z-index: 9999;
+  background-color: white;
+  height: 70px;
+}
+.navbar-nav .dropdown-menu {
+  background-color: white;
+}
+.navbar .navbar-toggler-icon{
+  background-color: $secondary;
+}
+.minimized-menu {
+  background-color: black;
+  @include media-breakpoint-down(sm) {
+    background-color: white;
+    border:none;
+  }
+}
+.dropdown-menu[data-bs-popper] {
+  top: 70%;
+}
+#contact-nav {
+  .container {
+    @include media-breakpoint-down(sm) {
+      justify-content: flex-start;
+    }
+  }
+}
+
+/* Highlight navigation items on hover */
+.nav-item:hover > .nav-link,
+.nav-item.active > .nav-link,
+.nav-item.dropdown:hover > .nav-link,
+.nav-item.dropdown.show > .nav-link,
+.dropdown-item:hover {
+  background-color: transparent;
+  color: $secondary !important;
+}
+.dropdown-item{
+  color:$header-color !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+footer-sm {
+  margin-right: 0;
+}
+.rapidAloansLogo {
+  @include media-breakpoint-down(sm) {
+    text-align: center !important;
+  }
+}
+
+nav .container {
+  max-width: none;
+  @include media-breakpoint-up(xl) {
+    max-width: 1400px;
+  }
+}

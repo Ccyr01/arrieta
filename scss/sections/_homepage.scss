@@ -1,0 +1,164 @@
+@use "../custom" as *;
+.home {
+  color: $primary;
+  background-color: $primary;
+  #video_container {
+    position: relative;
+    //padding-top: 231px;
+    width: 100%;
+
+    overflow: hidden;
+    padding-top: 70px;
+    z-index: 0;
+
+    // @media (max-width: 1010){
+
+    // }
+    //   @include media-breakpoint-down(sm) {
+    //     padding-top: 200px;
+    //   }
+    //   @include media-breakpoint-down(md) {
+    //     padding-top: 190px;
+    //   }
+    //   @include media-breakpoint-down(lg) {
+    //     padding-top: 190px;
+    //   }
+
+    //   @include media-breakpoint-down(xl) {
+    //     padding-top: 220px;
+    //   }
+  }
+  #overlay {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Text color */
+    > div {
+      background-color: rgba(255,255,255, 0.35);
+      max-width: 80%;
+      padding: 15px;
+      @include media-breakpoint-down(sm) {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  #overlay {
+    h2 {
+      color: $header-color;
+      margin-bottom: 10px;
+      text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.5);
+      @include media-breakpoint-down(sm) {
+        font-size: medium;
+      }
+    }
+    p {
+      margin: 0;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    a {
+      color: $header-color;
+      @include media-breakpoint-down(sm) {
+        display: none;
+        font-size: medium;
+        margin-top: 0px;
+        padding-top: 0;
+      }
+    }
+    .call-today-div {
+      > p {
+        @include media-breakpoint-down(sm) {
+          font-size: small;
+        }
+      }
+      .fa-phone{
+        color:$secondary;
+      }
+    }
+    .phone{
+      text-decoration: none;
+      color:$header-color;
+      font-weight: 700;
+    }
+  }
+  #quote {
+    font-size: 32px;
+    font-weight: bold;
+    @include media-breakpoint-down(sm) {
+      font-size: medium;
+    }
+  }
+  .video {
+    //   position: relative;
+    width: 100%;
+    z-index: 0;
+    // margin-top: 3rem;
+  }
+  .navbar-brand img {
+    height: 50px;
+  }
+  .form-section {
+    background-color: $primary;
+    padding: 0 5rem;
+  }
+  #types-of-insurance {
+    background-color: $primary;
+
+    .oscar {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    ul li a {
+      color: $header-color;
+    }
+    ul li a:hover {
+      color: $secondary;
+    }
+    .highlighted-text {
+      color: $header-color;
+      cursor: pointer;
+    }
+    .highlighted-text:hover {
+      color: $secondary;
+    }
+  }
+  /* styles.css */
+
+.fixed-icons {
+  position: fixed;
+  top: 50%;
+  left: 10px; /* Adjust the right distance as needed */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the icons as needed */
+.fixed-icons i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white; /* Adjust the color as needed */
+}
+
+/* Optional: Add hover effects or animations */
+.fixed-icons i:hover {
+  color: #ff0000; /* Change color on hover */
+}
+
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+}
