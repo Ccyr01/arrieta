@@ -21,6 +21,9 @@
   background-color: white;
   height: 70px;
 }
+.navbar-brand img {
+  height: 50px;
+}
 .navbar-nav .dropdown-menu {
   background-color: white;
 }
@@ -28,7 +31,7 @@
   background-color: $secondary;
 }
 .minimized-menu {
-  background-color: black;
+  // background-color: black;
   @include media-breakpoint-down(sm) {
     background-color: white;
     border:none;

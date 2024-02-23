@@ -1,0 +1,24 @@
+@use "../custom" as *;
+
+.free-quote-form-section{
+    background-color: white;
+    padding: 0 5rem;
+    width:100%;
+    @include media-breakpoint-up(lg) {
+      font-size: large;
+      padding: 0 10rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: medium;
+      padding: 0 2rem;
+    }
+    form{
+      margin-top: 5rem;
+    }
+    h2{
+      justify-content: center;
+    } 
+    input{
+      background-color: lightgrey;
+    }
+}

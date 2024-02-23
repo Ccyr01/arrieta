@@ -1,0 +1,76 @@
+@use "../custom" as *;
+
+.home-insurance{
+    .home-insurance-section{
+        background-color: white;
+        margin-top:200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .home-insurance-div{
+            width: 90vw;
+
+            .home-insurance-info-div{
+                background-color: $dark-blue;
+            }
+            .home-insurance-info{
+                display: flex;
+                flex-direction: column;
+                padding: 2rem 3rem;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    text-align: center;
+                    color:$secondary;
+                    font-weight: 800;
+                }
+                h4{
+                    color: white;
+                    margin-bottom: 10px;
+                    font-weight: 350;
+                }
+                p{
+                    color: white;
+                }
+                a {
+                    align-items: center;
+                    border: solid 3px $secondary;
+                    color: $secondary;
+                    margin-bottom: 2rem;
+                }
+                a:hover {
+                    color: white;
+                    background-color: $secondary;
+                    transition: background-color 0.9s ease, color 0.9s ease;
+                }
+            }
+            .emergency-coverage-div{
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                @include media-breakpoint-down(md){
+                    flex-direction: column;
+                }
+                .emergency-coverage{
+                    // width: 48%;
+                    h3{
+                        color: $header-color;
+                        font-weight: 800;
+                    }
+                    
+                } 
+                .emergency-coverage-img{
+                    // width:48%;
+                    width: 1200px;
+                    @include media-breakpoint-down(md){
+                        width: 100%
+                    }
+                }
+                .emergency-coverage-img img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

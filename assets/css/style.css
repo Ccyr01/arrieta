@@ -11882,6 +11882,10 @@ textarea.form-control-lg {
   height: 70px;
 }
 
+.navbar-brand img {
+  height: 50px;
+}
+
 .navbar-nav .dropdown-menu {
   background-color: white;
 }
@@ -11890,9 +11894,6 @@ textarea.form-control-lg {
   background-color: #ed7766;
 }
 
-.minimized-menu {
-  background-color: black;
-}
 @media (max-width: 575.98px) {
   .minimized-menu {
     background-color: white;
@@ -12042,9 +12043,6 @@ nav .container {
 .home .video {
   width: 100%;
   z-index: 0;
-}
-.home .navbar-brand img {
-  height: 50px;
 }
 .home #types-of-insurance {
   background-color: #0033a0;
@@ -12240,93 +12238,203 @@ nav .container {
 .home .google-review .anchor-container #google-review-img {
   width: 100%;
 }
-.home .footer {
+
+iframe {
+  aspect-ratio: 16/9;
+}
+
+.footer {
   background-color: #0033a0;
-  height: 300px;
+  height: 100%;
   padding: 0 7rem;
 }
 @media (max-width: 575.98px) {
-  .home .footer {
+  .footer {
     padding: 0 3rem;
   }
 }
-.home .footer .oscar-title-footer {
+.footer .oscar-title-footer {
   display: flex;
   align-items: start;
 }
-.home .footer .oscar-title-footer h2 {
+.footer .oscar-title-footer h2 {
   width: 100%;
   margin: 30px 20px;
   color: white;
 }
-.home .footer .contact-services-footer {
+.footer .contact-services-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid white;
 }
 @media (max-width: 575.98px) {
-  .home .footer .contact-services-footer {
+  .footer .contact-services-footer {
     flex-direction: column;
     padding-left: 12px;
   }
 }
-.home .footer .contact-services-footer .contact-us-footer,
-.home .footer .contact-services-footer .services-footer {
+.footer .contact-services-footer .contact-us-footer,
+.footer .contact-services-footer .services-footer {
   flex: 1;
   text-align: start;
   margin: 10px;
 }
-.home .footer .contact-services-footer .contact-us-footer h4,
-.home .footer .contact-services-footer .services-footer h4 {
+.footer .contact-services-footer .contact-us-footer h4,
+.footer .contact-services-footer .services-footer h4 {
   font-size: 16px;
   color: white;
 }
-.home .footer .contact-services-footer .contact-us-footer p,
-.home .footer .contact-services-footer .services-footer p {
+.footer .contact-services-footer .contact-us-footer p,
+.footer .contact-services-footer .services-footer p {
   color: white;
 }
-.home .footer .contact-services-footer .contact-us-footer ul,
-.home .footer .contact-services-footer .services-footer ul {
+.footer .contact-services-footer .contact-us-footer ul,
+.footer .contact-services-footer .services-footer ul {
   color: white;
   list-style-type: none;
   padding: 0;
 }
-.home .footer .contact-services-footer .contact-us-footer:not(:last-child),
-.home .footer .contact-services-footer .services-footer:not(:last-child) {
+.footer .contact-services-footer .contact-us-footer:not(:last-child),
+.footer .contact-services-footer .services-footer:not(:last-child) {
   border-right: 1px solid white;
 }
 @media (max-width: 575.98px) {
-  .home .footer .contact-services-footer .contact-us-footer:not(:last-child),
-  .home .footer .contact-services-footer .services-footer:not(:last-child) {
+  .footer .contact-services-footer .contact-us-footer:not(:last-child),
+  .footer .contact-services-footer .services-footer:not(:last-child) {
     border-right: 0;
   }
 }
-.home .footer .bottom-row-footer p {
+.footer .bottom-row-footer p {
   font-size: 12px;
   color: white;
 }
-.home .footer .bottom-row-footer .socialIcons {
+.footer .bottom-row-footer .socialIcons {
   margin-bottom: 3rem;
   color: white;
 }
 @media (max-width: 575.98px) {
-  .home .footer .bottom-row-footer .socialIcons {
+  .footer .bottom-row-footer .socialIcons {
     margin-bottom: 2px;
   }
 }
-.home .footer .bottom-row-footer .socialIcons i {
+.footer .bottom-row-footer .socialIcons i {
   font-size: 1.6rem;
 }
-.home .sidebar-menu {
-  display: none;
+
+.home-insurance .home-insurance-section {
+  background-color: white;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home .sidebar-menu a {
+.home-insurance .home-insurance-section .home-insurance-div {
+  width: 90vw;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info-div {
+  background-color: #0E1941;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info h3 {
+  text-align: center;
+  color: #ed7766;
+  font-weight: 800;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 350;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info p {
   color: white;
 }
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info a {
+  align-items: center;
+  border: solid 3px #ed7766;
+  color: #ed7766;
+  margin-bottom: 2rem;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info a:hover {
+  color: white;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div {
+    flex-direction: column;
+  }
+}
+.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage h3 {
+  color: #45bce5;
+  font-weight: 800;
+}
+.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
+  width: 1200px;
+}
+@media (max-width: 767.98px) {
+  .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
+    width: 100%;
+  }
+}
+.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img img {
+  width: 100%;
+}
 
-iframe {
-  aspect-ratio: 16/9;
+.sidebar-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: var(--clr-grey-10);
+  z-index: 200;
+}
+.sidebar-menu a {
+  color: white;
+}
+.sidebar-menu #menu-col {
+  width: 100%;
+}
+
+.free-quote-form-section {
+  background-color: white;
+  padding: 0 5rem;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .free-quote-form-section {
+    font-size: large;
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .free-quote-form-section {
+    font-size: medium;
+    padding: 0 2rem;
+  }
+}
+.free-quote-form-section form {
+  margin-top: 5rem;
+}
+.free-quote-form-section h2 {
+  justify-content: center;
+}
+.free-quote-form-section input {
+  background-color: lightgrey;
 }
 
 /*# sourceMappingURL=style.css.map */
