@@ -12223,6 +12223,107 @@ nav .container {
 .home .card-box .card-body p {
   color: white;
 }
+.home .google-review {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .google-review .anchor-container {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+.home .google-review .anchor-container div {
+  width: 200px;
+}
+.home .google-review .anchor-container #google-review-img {
+  width: 100%;
+}
+.home .footer {
+  background-color: #0033a0;
+  height: 300px;
+  padding: 0 7rem;
+}
+@media (max-width: 575.98px) {
+  .home .footer {
+    padding: 0 3rem;
+  }
+}
+.home .footer .oscar-title-footer {
+  display: flex;
+  align-items: start;
+}
+.home .footer .oscar-title-footer h2 {
+  width: 100%;
+  margin: 30px 20px;
+  color: white;
+}
+.home .footer .contact-services-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid white;
+}
+@media (max-width: 575.98px) {
+  .home .footer .contact-services-footer {
+    flex-direction: column;
+    padding-left: 12px;
+  }
+}
+.home .footer .contact-services-footer .contact-us-footer,
+.home .footer .contact-services-footer .services-footer {
+  flex: 1;
+  text-align: start;
+  margin: 10px;
+}
+.home .footer .contact-services-footer .contact-us-footer h4,
+.home .footer .contact-services-footer .services-footer h4 {
+  font-size: 16px;
+  color: white;
+}
+.home .footer .contact-services-footer .contact-us-footer p,
+.home .footer .contact-services-footer .services-footer p {
+  color: white;
+}
+.home .footer .contact-services-footer .contact-us-footer ul,
+.home .footer .contact-services-footer .services-footer ul {
+  color: white;
+  list-style-type: none;
+  padding: 0;
+}
+.home .footer .contact-services-footer .contact-us-footer:not(:last-child),
+.home .footer .contact-services-footer .services-footer:not(:last-child) {
+  border-right: 1px solid white;
+}
+@media (max-width: 575.98px) {
+  .home .footer .contact-services-footer .contact-us-footer:not(:last-child),
+  .home .footer .contact-services-footer .services-footer:not(:last-child) {
+    border-right: 0;
+  }
+}
+.home .footer .bottom-row-footer p {
+  font-size: 12px;
+  color: white;
+}
+.home .footer .bottom-row-footer .socialIcons {
+  margin-bottom: 3rem;
+  color: white;
+}
+@media (max-width: 575.98px) {
+  .home .footer .bottom-row-footer .socialIcons {
+    margin-bottom: 2px;
+  }
+}
+.home .footer .bottom-row-footer .socialIcons i {
+  font-size: 1.6rem;
+}
+.home .sidebar-menu {
+  display: none;
+}
+.home .sidebar-menu a {
+  color: white;
+}
 
 iframe {
   aspect-ratio: 16/9;
