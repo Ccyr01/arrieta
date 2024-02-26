@@ -1,21 +1,40 @@
 @use "../custom" as *;
 
-.sidebar-menu{
-    display: none;
-    position:fixed;
-    top:0;
-    right:0;
-    width:300px;
-    height:100%;
-    background: var(--clr-grey-10);
-    z-index: 200;
-    a{
-      color: white;
+.sidebar-menu {
+  // display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background: var(--clr-grey-10);
+  z-index: 200;
+  transition: all 1s ease-out;
+  a {
+    color: white;
+  }
+  // .col{
+  //   flex-grow: 1;
+  // }
+  #menu-col {
+    width: 100%;
+  }
+  #close{
+    color:white;
+    font-size: 20px;
+  }
+  ul{
+    width:100%;
+    
+    li{
+      width:80%;
     }
-    // .col{
-    //   flex-grow: 1;
-    // }
-    #menu-col{
-      width: 100%;
+    .close-button{
+      text-align: right;
     }
+  }
+}
+
+.sidebar-menu.show {
+  right: 0;
 }
