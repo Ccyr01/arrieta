@@ -7,6 +7,7 @@ for (let h of hamburger) {
   console.log(h);
   h.addEventListener("click", () => {
     sidebar.classList.add("show");
+    console.log('here in contact')
   });
 }
 

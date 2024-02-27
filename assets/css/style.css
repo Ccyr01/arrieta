@@ -12459,6 +12459,11 @@ iframe {
   background-color: lightgrey;
 }
 
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+
 .outer1 {
   margin-top: 200px;
 }
@@ -12467,9 +12472,12 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #0E1941;
 }
 .flex-map-container .flex {
   background-color: #0E1941;
+  height: 100%;
+  padding-top: 24px;
 }
 .flex-map-container .flex h4 {
   margin-left: 20px;
@@ -12479,26 +12487,35 @@ iframe {
   margin-left: 20px;
   color: white;
 }
+.flex-map-container .flex .scrollspy-example {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  height: 300px;
+  scrollbar-width: 50px;
+  scrollbar-color: green;
+}
+.flex-map-container .flex .scrollspy-example ::-webkit-scrollbar {
+  width: 11px;
+}
+.flex-map-container .flex .scrollspy-example ::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.flex-map-container .flex .scrollspy-example ::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+.flex-map-container .flex .scrollspy-example span {
+  margin-left: 1.2rem;
+  display: flex;
+  flex-direction: row;
+}
+.flex-map-container .flex .scrollspy-example span p {
+  font-size: 12px;
+}
 
 .outer1 {
   padding-top: 110px;
-}
-
-#contact {
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-  margin-top: 100px;
-  border-radius: 0 0 500px 500px;
-  width: 100%;
-}
-
-.description-box-contact {
-  font-size: 20px;
-  max-width: 700px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin: 0 auto;
 }
 
 h2 {
@@ -12521,7 +12538,7 @@ body {
 
 .map {
   width: 100%;
-  height: 600px;
+  height: 100%;
   overflow: hidden;
 }
 @media (min-width: 992px) {
@@ -12529,12 +12546,6 @@ body {
     width: 800px;
   }
 }
-@media (max-width: 767.98px) {
-  .map {
-    height: 280px;
-  }
-}
-
 p.text-center {
   font-size: 20px; /* Adjust the font size as needed */
   line-height: 2; /* Adjust the line height as needed for better readability */
@@ -12553,6 +12564,40 @@ p.text-center {
 }
 .location-boxes .card-body p {
   color: #45bce5;
+}
+.location-boxes .card-body .btn {
+  width: 100%;
+}
+
+.hometown-hero-body .title {
+  background-color: #0033a0;
+  margin-top: 70px;
+  text-align: center;
+  color: #ed7766;
+}
+.hometown-hero-body .slanted {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-color: #0033a0; /* For browsers that do not support gradients */
+  background-image: linear-gradient(5deg, #fff 0%, #0033a0 49%, #0033a0 50%, #fff 100%);
+}
+.hometown-hero-body .slanted h1 {
+  font-size: 60px;
+}
+.hometown-hero-body .nominations .nominations-div {
+  display: flex;
+  flex-direction: column;
+}
+.hometown-hero-body .nominations .nominations-div a {
+  align-items: center;
+  border: solid 3px #ed7766;
+  color: #ed7766;
+}
+.hometown-hero-body .nominations .nominations-div a:hover {
+  color: white;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

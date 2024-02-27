@@ -1,0 +1,46 @@
+@use "../custom" as *;
+
+.hometown-hero-body{
+    .title{
+        background-color: $primary;
+        margin-top: 70px;
+        text-align: center;
+        color: $secondary;
+    }
+    //SLANT---------------------------------
+  .slanted {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: $primary; /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      5deg,
+      $white 0%,
+      $primary 49%,
+      $primary 50%,
+      $white 100%
+    );
+    h1{
+        font-size: 60px;
+    }
+  }
+  .nominations{
+    
+    
+    .nominations-div{
+      display: flex;
+      flex-direction: column;
+    
+      a {
+        align-items: center;
+        border: solid 3px $secondary;
+        color: $secondary;
+      }
+      a:hover {
+        color: white;
+        background-color: $secondary;
+        transition: background-color 0.9s ease, color 0.9s ease;
+      }
+    }
+  }
+}

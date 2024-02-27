@@ -20,49 +20,44 @@
                             <span class="fs-5 d-none d-sm-inline">Menu</span>
                         </a>
                         <ul class="nav nav-pills flex-column mt-5 mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="close-button"><i class="fa-regular fa-circle-xmark" id="close"></i></li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link align-middle px-0">
-                                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                                <a href="../index.html" class="nav-link align-middle px-0">
+                                    Home
                                 </a>
                             </li>
                             <li>
                                 <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Insurance Products</span> </a>
-                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <i class="fs-4 bi-speedometer2"></i> > Insurance Products </a>
+                                <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                     <li class="w-100">
-                                        <a href="../homeInsurance/index.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Home Insurance</span> </a>
+                                        <a href="../homeInsurance/index.html" class="nav-link px-0"> Home Insurance </a>
                                     </li>
                                     <li>
-                                        <a href="../autoInsurance/index.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Auto Insurance</span> </a>
+                                        <a href="../autoInsurance/index.html" class="nav-link px-0"> Auto Insurance
+                                    <li>
+                                        <a href="../lifeInsurance/index.html" class="nav-link px-0"> Life Insurance</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Life Insurance</span> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Commercial Insurance</span> </a>
+                                        <a href="../commercialInsurance/index.html" class="nav-link px-0"> Commercial Insurance</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Referral</span></a>
+                                    <i class="fs-4 bi-table"></i>Referral</a>
                             </li>
                             <li>
-                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Contact</span></a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Welcome</span></a>
-                                    </li>
-                                </ul>
+                                <a href="contact/index.html" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Contact</span> </a>
+                              </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-people"></i> Hometown Hero </a>
                             </li>
                             <li>
                                 <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Hometown Hero</span> </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Game Day Giveaways</span> </a>
+                                    <i class="fs-4 bi-people"></i> Game Day Giveaways </a>
                             </li>
                         </ul>
                         <hr>
@@ -76,56 +71,55 @@
         </div>
     </section>
     
-  <!--NAVBAR SECTION-->
-    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-        <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="../images/logo_oscararrietta_sm.png" alt = "Oscar Arrieta AgencyS" class="img-fluid">
+<!--NAVBAR SECTION-->
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="../images/logo_oscararrietta_sm.png" alt = "Oscar Arrieta AgencyS" class="img-fluid">
 
-        </a>
-        <button class="minimized-menu d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Insurance Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../homeInsurance/index.html">Home Insurance</a></li>
-                <li><a class="dropdown-item" href="../autoInsurance/index.html" target="blank">Auto Insurance</a></li>
-                <li><a class="dropdown-item" href="#">Life Insurance</a></li>              
-                <li><a class="dropdown-item" href="">Commercial Insurance</a></li>
-                </a></li>
+    </a>
+    <button class="minimized-menu d-lg-none hamburger" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Insurance Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="homeInsurance/index.html">Home Insurance</a></li>
+            <li><a class="dropdown-item" href="autoInsurance/index.html" target="blank">Auto Insurance</a></li>
+            <li><a class="dropdown-item" href="lifeInsurance/index.html">Life Insurance</a></li>              
+            <li><a class="dropdown-item" href="commercialInsurance/index.html">Commercial Insurance</a></li>
+            </a></li>
 
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="promo/index.html" target="_blank">Referral</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="">Welcome</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.texaslottery.com/export/sites/lottery/Games/Check_Your_Numbers.html" target="_blank">Hometown Hero</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact/index.html">Game Day Giveaways</a>
-            </li>
             </ul>
-        </div>
-        </div>
-    </nav>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="promo/index.html" target="_blank">Referral</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="">Welcome</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.texaslottery.com/export/sites/lottery/Games/Check_Your_Numbers.html" target="_blank">Hometown Hero</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact/index.html">Game Day Giveaways</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
     <section class="home-insurance-section">
         <div class="home-insurance-div">
             <div class="home-insurance-info-div">
@@ -230,6 +224,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
