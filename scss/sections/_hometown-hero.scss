@@ -135,7 +135,7 @@
       list-style: none;
       background: #fff;
       border-radius: 8px;
-      height: 342px;
+      height: 450px;
       display: flex;
       cursor: pointer;
       background-color: $dark-blue;
@@ -163,6 +163,12 @@
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid #fff;
+    }
+    .card .img:hover{
+      img{
+        width: 300px;
+      }
+      
     }
     .card h2 {
       font-weight: 500;

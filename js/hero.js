@@ -92,8 +92,8 @@ const dragStop = () => {
   carousel.classList.remove("dragging");
 };
 const autoPlay = () => {
-  if(window.innerWidth < 800)return;
-  timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 3500);
+  // if(window.innerWidth < 800)return;
+  // timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 3500);
 };
 autoPlay();
 const infiniteScroll = () => {
