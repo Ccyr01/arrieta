@@ -11882,6 +11882,12 @@ textarea.form-control-lg {
   height: 70px;
 }
 
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    width: 80%;
+  }
+}
+
 .navbar-brand img {
   height: 50px;
 }
@@ -12224,7 +12230,7 @@ nav .container {
 .home .slanted {
   height: 200px;
   background-color: #0033a0; /* For browsers that do not support gradients */
-  background-image: linear-gradient(185deg, white 0%, white 49%, #0033a0 50%, #0033a0 100%);
+  background-image: linear-gradient(183deg, white 0%, white 49%, #0033a0 50%, #0033a0 100%);
 }
 .home .google-review {
   background-color: white;
@@ -12287,7 +12293,7 @@ iframe {
 }
 .footer .contact-services-footer .contact-us-footer h4,
 .footer .contact-services-footer .services-footer h4 {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 .footer .contact-services-footer .contact-us-footer p,
@@ -12298,7 +12304,10 @@ iframe {
 .footer .contact-services-footer .services-footer ul {
   color: white;
   list-style-type: none;
-  padding: 0;
+}
+.footer .contact-services-footer .contact-us-footer ul li,
+.footer .contact-services-footer .services-footer ul li {
+  padding-top: 10px;
 }
 .footer .contact-services-footer .contact-us-footer:not(:last-child),
 .footer .contact-services-footer .services-footer:not(:last-child) {
@@ -12325,6 +12334,9 @@ iframe {
 }
 .footer .bottom-row-footer .socialIcons i {
   font-size: 1.6rem;
+}
+.footer .bottom-row-footer .socialIcons .menu-footer {
+  cursor: pointer;
 }
 
 .home-insurance .home-insurance-section {
@@ -12406,7 +12418,8 @@ iframe {
   height: 100%;
   background: var(--clr-grey-10);
   z-index: 200;
-  transition: all 1s ease-out;
+  transition: opacity 1ms, right 1s ease-out;
+  opacity: 0;
 }
 .sidebar-menu a {
   color: white;
@@ -12426,10 +12439,32 @@ iframe {
 }
 .sidebar-menu ul .close-button {
   text-align: right;
+  cursor: pointer;
 }
 
 .sidebar-menu.show {
   right: 0;
+  opacity: 1;
+}
+
+@keyframes close {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  80% {
+    right: -100%;
+    opacity: 1;
+  }
+  100% {
+    right: -100%;
+    opacity: 0;
+  }
+}
+.sidebar-menu.close {
+  right: -100%;
+  opacity: 1;
+  animation: close 3s forwards;
 }
 
 .free-quote-form-section {
@@ -12575,19 +12610,43 @@ p.text-center {
   text-align: center;
   color: #ed7766;
 }
-.hometown-hero-body .slanted {
+.hometown-hero-body .title h1 {
+  font-weight: 800;
+}
+.hometown-hero-body .title {
+  display: flex;
+  flex-direction: column;
+}
+.hometown-hero-body .title .h1-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 80px;
+}
+.hometown-hero-body .slanted-top {
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: 300px;
+  align-items: center;
   background-color: #0033a0; /* For browsers that do not support gradients */
-  background-image: linear-gradient(5deg, #fff 0%, #0033a0 49%, #0033a0 50%, #fff 100%);
+  background-image: linear-gradient(178deg, #0033a0 0%, #0033a0 49%, #fff 50%, #fff 100%);
 }
-.hometown-hero-body .slanted h1 {
-  font-size: 60px;
+.hometown-hero-body .nominations {
+  padding-top: 5px;
 }
 .hometown-hero-body .nominations .nominations-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hometown-hero-body .nominations .nominations-div h2 {
+  font-weight: 700;
+}
+.hometown-hero-body .nominations .nominations-div h2,
+.hometown-hero-body .nominations .nominations-div p {
+  max-width: 800px;
 }
 .hometown-hero-body .nominations .nominations-div a {
   align-items: center;
@@ -12598,6 +12657,213 @@ p.text-center {
   color: white;
   background-color: #ed7766;
   transition: background-color 0.9s ease, color 0.9s ease;
+}
+.hometown-hero-body .heros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 35px;
+  min-height: 600px;
+}
+.hometown-hero-body .heros .wrapper {
+  max-width: 1100px;
+  width: 100%;
+}
+.hometown-hero-body .heros .controls i {
+  height: 50px;
+  width: 50px;
+  background-color: #0E1941;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.25rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.hometown-hero-body .heros .wrapper i:first-child {
+  left: 300px;
+  z-index: 50;
+}
+.hometown-hero-body .heros .wrapper i:last-child {
+  right: 270px;
+}
+.hometown-hero-body .heros .wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 12px);
+  gap: 5px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+.hometown-hero-body .heros .carousel::-webkit-scrollbar {
+  display: none;
+}
+.hometown-hero-body .heros .carousel.no-transition {
+  scroll-behavior: auto;
+}
+.hometown-hero-body .heros .carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.hometown-hero-body .heros .carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.hometown-hero-body .heros .carousel .card {
+  scroll-snap-align: start;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  height: 342px;
+  display: flex;
+  cursor: pointer;
+  background-color: #0E1941;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+  transition: all 500ms ease-in-out;
+  transform: scaleX(0.9) scaleY(0.9);
+}
+.hometown-hero-body .heros .carousel .card:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.hometown-hero-body .heros .card .img {
+  background: #0E1941;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hometown-hero-body .heros .card .img img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.hometown-hero-body .heros .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  color: white;
+}
+.hometown-hero-body .heros .card span {
+  color: black;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 900px) {
+  .hometown-hero-body .heros .wrapper .carousel {
+    grid-auto-columns: calc(50% - 9px);
+  }
+  .hometown-hero-body .heros .wrapper i:first-child {
+    left: 200px;
+  }
+  .hometown-hero-body .heros .wrapper i:last-child {
+    right: 170px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hometown-hero-body .heros .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  .hometown-hero-body .heros .wrapper i:first-child {
+    left: 100px;
+  }
+  .hometown-hero-body .heros .wrapper i:last-child {
+    right: 70px;
+  }
+}
+.hometown-hero-body .slanted {
+  height: 200px;
+  background-color: #0033a0; /* For browsers that do not support gradients */
+  background-image: linear-gradient(183deg, white 0%, white 49%, #0033a0 50%, #0033a0 100%);
+}
+
+.gameday-body .gameday-section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gameday-body .gameday-section .gameday-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  gap: 10px;
+}
+@media (max-width: 767.98px) {
+  .gameday-body .gameday-section .gameday-div {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+.gameday-body .gameday-section .gameday-div .basketball-img-div {
+  margin: 0 50px;
+  padding: 20px 20px;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .gameday-body .gameday-section .gameday-div .basketball-img-div {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .gameday-body .gameday-section .gameday-div .basketball-img-div {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+.gameday-body .gameday-section .gameday-div .basketball-img-div img {
+  width: 100%;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article {
+  padding-bottom: 100px;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article h2 {
+  font-weight: 700;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article p {
+  font-size: 20px;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article a {
+  width: 350px !important;
+  font-size: 18px;
+}
+@media screen and (max-width: 400px) {
+  .gameday-body .gameday-section .gameday-div .score-big-div .score-big-article a {
+    width: 260px !important;
+  }
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article .register {
+  align-items: center;
+  color: #ed7766;
+  margin-bottom: 2rem;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article .register:hover {
+  color: white;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+.gameday-body .gameday-section .gameday-div .score-big-div .score-big-article .share:hover {
+  color: #ed7766;
 }
 
 /*# sourceMappingURL=style.css.map */

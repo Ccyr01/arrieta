@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hometown Hero</title>
+    <title>Gameday Giveaways</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
 </head>
-<body class="hometown-hero-body">
+<body class="gameday-body">
+<!--Sidebar-->
     <section class="sidebar-menu hidden" id="sidebar-menu">
         <div class="container-fluid">
             <div class="row flex-nowrap">
@@ -45,7 +46,7 @@
                                     <i class="fs-4 bi-table"></i>Referral</a>
                             </li>
                             <li>
-                                <a href="contact/index.html" class="nav-link px-0 align-middle">
+                                <a href="../contact/index.html" class="nav-link px-0 align-middle">
                                     <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Contact</span> </a>
                               </li>
                             <li>
@@ -67,6 +68,8 @@
             </div>
         </div>
     </section>
+
+<!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
         <a class="navbar-brand" href="#">
@@ -87,7 +90,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="homeInsurance/index.html">Home Insurance</a></li>
-                <li><a class="dropdown-item" href="autoInsurance/index.html" target="blank">Auto Insurance</a></li>
+                <li><a class="dropdown-item" href="autoInsurance/index.html">Auto Insurance</a></li>
                 <li><a class="dropdown-item" href="lifeInsurance/index.html">Life Insurance</a></li>              
                 <li><a class="dropdown-item" href="commercialInsurance/index.html">Commercial Insurance</a></li>
                 </a></li>
@@ -98,7 +101,7 @@
                 <a class="nav-link" href="promo/index.html" target="_blank">Referral</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="../contact/index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contact
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -115,48 +118,27 @@
         </div>
         </div>
     </nav>
-    <!-- title -->
-    <section class="title">
-        <div class="h1-div">
-            <h1 class=" mt-5 text-uppercase">Hometown Hero</h1>
-            
-        </div>
-        <div class="slanted-top">
-
-        </div>
-        
-    </section>
-
-    <!-- nominations paragraph -->
-    <section class="nominations">
-        <div class="nominations-div">
-        <h2 class="know-someone">
-            Know of someone that is deserving of being honored as the hometown hero at the next UTEP game?
-        </h2>    
-        <p class="nomination-paragraph fs-5 py-3">
-            Nominate the special person in your life and tell us why you believe they should be the hometown hero at the next UTEP game.
-        </p>
-        <a href="" class="btn btn-primary btn-md text-uppercase">Click here</a>
-    </div>
-    </section>
-
-    <!-- heros -->
-    <section class="heros">
-        <div class="wrapper">
-           
-            <ul class="carousel">
-                <!-- Dynamically insert heros -->
-
-            </ul>
-           
-        </div>
-        <div class="controls">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+    
+    <section class="gameday-section">
+        <div class="gameday-div">
+            <div class="basketball-img-div">
+                <img src="../images/basketball.jpeg" alt="">
+            </div>
+            <div class="score-big-div">
+                <article class="score-big-article">
+                    <h2 class="score-big-header text-uppercase">Score Big!</h2>
+                    <p class="text-capitalize">Register Now for a shot to win spectacular Prizes!</p>
+                    <a href="https://fs21.formsite.com/ovK14V/cpztmvzxym/index" class="register btn btn-primary text-uppercase mb-3" target="_blank">Register Now</a><br>
+                    <a href="https://www.facebook.com/" class="share text-capitalize share mt-3"target="_blank">Share on your social media</a>
+                </article>
+            </div>
         </div>
     </section>
+
+<!--Bottom Slant-->
     <div class="slanted"></div>
-    <!-- Footer -->
+
+<!-- Footer -->
 <footer class = "footer">
     <div class="oscar-title-footer">
         <h2 class="">Oscar Arrieta Agency</h2>
@@ -205,7 +187,6 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
     <script src="../script.js"></script>
-    <script src="../js/data.js"></script> 
-    <script src="../js/hero.js"></script>
+    
 </body>
 </html>
