@@ -12998,12 +12998,6 @@ p.text-center {
   flex-wrap: wrap;
   gap: 20px;
 }
-@media screen and (min-width: 940px) and (max-width: 1260px) {
-  .insurance-links-section .links-container {
-    flex-wrap: nowrap;
-    gap: 5px;
-  }
-}
 .insurance-links-section .links-container h2 {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
@@ -13022,6 +13016,18 @@ p.text-center {
   height: 300px;
   width: 300px;
   position: relative;
+}
+@media screen and (min-width: 940px) and (max-width: 1260px) {
+  .insurance-links-section .links-container .insurance-img {
+    height: 220px;
+    width: 220px;
+  }
+}
+@media screen and (max-width: 939px) and (min-width: 740px) {
+  .insurance-links-section .links-container .insurance-img {
+    height: 300px;
+    width: 300px;
+  }
 }
 @media screen and (max-width: 620px) {
   .insurance-links-section .links-container .insurance-img {
@@ -13044,7 +13050,6 @@ p.text-center {
 .insurance-links-section .links-container .insurance-img:hover {
   cursor: pointer;
   box-shadow: 2px 12px 10px 1px #0033a0;
-  filter: grayscale(50%);
   transform: scale(1.1);
 }
 .insurance-links-section .links-container .insurance-img:hover h2 {
