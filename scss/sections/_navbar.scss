@@ -18,7 +18,11 @@
 }
 .navbar {
   z-index: 9999;
-  background-color: white;
+  top: 2rem;
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 0 15px;
   height: 70px;
 }
 .navbar-brand {

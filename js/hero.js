@@ -2,6 +2,9 @@ const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".controls i");
 const carouselChildren = [...carousel.children];
+const popupContainer = document.getElementById('popupContainer');
+const card = document.querySelector('.card');
+
 
 // pre: list param to represent an array of student objects,
 //       page param to represent the requested page number
@@ -35,6 +38,7 @@ function insertDomElements(imgSrc, firstName, lastName, email) {
   img.setAttribute("class", "draggable");
   img.setAttribute("src", imgSrc);
   img.setAttribute("alt", "Profile Picture");
+  img.addEventListener('click', () => showImagePopup(imgSrc, `${firstName} ${lastName} - ${email}`));
   div.appendChild(img);
   const h2 = document.createElement("h2");
   h2.innerHTML = `${firstName} ${lastName}`;
@@ -42,6 +46,38 @@ function insertDomElements(imgSrc, firstName, lastName, email) {
   carousel.appendChild(li);
 }
 showPage(data);
+
+//POPUP
+// Function to show the image popup with description
+function showImagePopup(imgSrc, description) {
+  console.log('inside showImagePopup');
+  const popup = document.getElementById('imagePopup');
+  popup.innerHTML = `<img src="${imgSrc}" alt="Popup Image"><p>${description}</p>`;
+  popup.style.display = 'block';
+
+  // Close the popup when clicking outside of it
+  document.addEventListener('click', closeImagePopup);
+}
+
+// Function to close the image popup
+function closeImagePopup(event) {
+  const popup = document.getElementById('imagePopup');
+
+  // Check if the click is outside the popup
+  if (!popup.contains(event.target)) {
+    popup.style.display = 'none';
+    document.removeEventListener('click', closeImagePopup);
+  }
+}
+
+// Hide popup when clicking outside the popup
+window.addEventListener('click', (event) => {
+  if (event.target === popupContainer) {
+      popupContainer.style.display = 'none';
+  }
+});
+
+
 
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 let isDragging = false,

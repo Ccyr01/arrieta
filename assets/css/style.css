@@ -11878,7 +11878,11 @@ textarea.form-control-lg {
 
 .navbar {
   z-index: 9999;
-  background-color: white;
+  top: 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 0 15px;
   height: 70px;
 }
 
@@ -11957,10 +11961,110 @@ nav .container {
 
 .home {
   color: #0033a0;
-  background-color: #0033a0;
+  background-color: white;
   /* filing a claim-------------------------*/
   /* Style the icons as needed */
   /* Optional: Add hover effects or animations */
+}
+.home .intro-section {
+  padding-top: 20px;
+  height: 520px;
+  background-color: white;
+}
+@media screen and (max-width: 664px) {
+  .home .intro-section {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
+  }
+}
+.home .intro-section .triangle-container {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 664px) {
+  .home .intro-section .triangle-container {
+    height: 700px;
+  }
+}
+.home .intro-section .triangle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.home .intro-section .triangle-2 {
+  background-color: #45bce5;
+  clip-path: polygon(100% 13%, 0 100%, 100% 100%);
+}
+.home .intro-section .triangle-3 {
+  background-color: #0E1941;
+  clip-path: polygon(0 13%, 0 100%, 100% 100%);
+}
+.home .intro-section .intro-pic-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+@media screen and (max-width: 664px) {
+  .home .intro-section .intro-pic-container {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    align-items: center;
+  }
+}
+.home .intro-section .intro-pic-container .intro-pic {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/images/oscar.jpg");
+  background-position: left 10rem bottom 20px;
+}
+@media (max-width: 991.98px) {
+  .home .intro-section .intro-pic-container .intro-pic {
+    background-position: left 3rem bottom 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .home .intro-section .intro-pic-container .intro-pic {
+    background-position: center;
+  }
+}
+.home .intro-section #overlay2 {
+  padding: 0 5rem;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  max-width: 80%;
+  padding: 15px;
+}
+.home .intro-section #overlay2 p {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+.home .intro-section #overlay2 a {
+  align-items: center;
+  border: solid 3px #ed7766;
+  color: #ed7766;
+}
+.home .intro-section #overlay2 a:hover {
+  color: #0E1941;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
 }
 .home #video_container {
   position: relative;
@@ -12181,6 +12285,7 @@ nav .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 15;
 }
 .home .fixed-icons i {
   font-size: 24px;
@@ -12780,6 +12885,26 @@ p.text-center {
     right: 70px;
   }
 }
+.hometown-hero-body .popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: red;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hometown-hero-body .popup-container .popup-content {
+  text-align: center;
+}
+.hometown-hero-body .popup-container .popup-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
 .hometown-hero-body .slanted {
   height: 200px;
   background-color: #0033a0; /* For browsers that do not support gradients */
@@ -12867,6 +12992,63 @@ p.text-center {
 }
 .gameday-body .gameday-section .gameday-div .score-big-div .score-big-article .share:hover {
   color: #ed7766;
+}
+
+.insurance-links-section .links-container {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 940px) and (max-width: 1260px) {
+  .insurance-links-section .links-container {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+}
+.insurance-links-section .links-container h2 {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-weight: bolder;
+  color: black;
+}
+@media screen and (max-width: 620px) {
+  .insurance-links-section .links-container h2 {
+    font-size: 18px;
+  }
+}
+.insurance-links-section .links-container .insurance-img {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+@media screen and (max-width: 620px) {
+  .insurance-links-section .links-container .insurance-img {
+    height: 150px;
+    width: 150px;
+  }
+}
+.insurance-links-section .links-container .home {
+  background-image: url("../../images/emergency-coverage.jpg");
+  background-size: cover;
+}
+.insurance-links-section .links-container .automotive {
+  background-image: url("../../images/autoGirl.jpg");
+  background-size: cover;
+}
+.insurance-links-section .links-container .life {
+  background-image: url("../../images/lifeInsurance.jpg");
+  background-size: cover;
+  background-position: right;
+}
+.insurance-links-section .links-container .commercial {
+  background-image: url("../../images/commercialInsurance.jpg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

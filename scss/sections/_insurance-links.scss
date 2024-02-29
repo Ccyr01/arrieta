@@ -1,0 +1,60 @@
+@use "../custom" as *;
+
+.insurance-links-section{
+
+    .links-container{
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media  screen and (min-width: 940px) and (max-width: 1260px){
+            flex-wrap: nowrap;
+            gap: 5px;
+        }
+        h2{
+            background-color: rgba(255,255,255,.7);
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            font-weight: bolder;
+            color: black;
+            @media  screen and (max-width: 620px){
+                font-size: 18px;
+            }
+        }
+        
+
+
+        .insurance-img{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            
+            @media  screen and (max-width: 620px) {
+                height: 150px;
+                width: 150px;
+            }
+        
+        }
+        .home{
+        background-image: url('../../images/emergency-coverage.jpg');
+        background-size: cover;
+        }
+        .automotive{
+            background-image: url('../../images/autoGirl.jpg');
+            background-size: cover;
+        }
+        .life{
+            background-image: url('../../images/lifeInsurance.jpg');
+            background-size: cover;
+            background-position: right;
+        }
+        .commercial{
+            background-image: url('../../images/commercialInsurance.jpg');
+            background-size: cover;
+        }
+    }
+}
