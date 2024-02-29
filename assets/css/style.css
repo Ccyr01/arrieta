@@ -11962,7 +11962,7 @@ nav .container {
 }
 .home .intro-section {
   padding-top: 20px;
-  height: 520px;
+  height: 720px;
   background-color: white;
 }
 @media screen and (max-width: 664px) {
@@ -11975,7 +11975,7 @@ nav .container {
 }
 .home .intro-section .triangle-container {
   width: 100vw;
-  height: 400px;
+  height: 600px;
   position: relative;
   overflow: hidden;
 }
@@ -12017,12 +12017,12 @@ nav .container {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("../../images/OscarArrieta.png");
-  background-position: left 10rem bottom 20px;
+  background-image: url("../../images/OscarArrietaLG.png");
+  background-position: center;
 }
-@media (max-width: 991.98px) {
+@media screen and (max-width: 664px) {
   .home .intro-section .intro-pic-container .intro-pic {
-    background-position: left 3rem bottom 20px;
+    background-image: url("../../images/OscarArrieta.png");
   }
 }
 @media (max-width: 767.98px) {
