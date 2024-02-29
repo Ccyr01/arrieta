@@ -1,0 +1,80 @@
+@use "../custom" as *;
+
+.gameday-body{
+    .gameday-section{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .gameday-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 650px;
+            gap: 10px;
+            @include media-breakpoint-down(md){
+                gap: 0;
+                flex-direction: column;
+            }
+            .basketball-img-div{
+                margin: 0 50px;
+                padding:20px 20px;
+                width: 100%;
+                @media screen and (max-width: 1000px) {
+                    padding:0;
+                    margin:0;
+                }
+                @include media-breakpoint-down(md){
+                    padding: 10px;
+                    margin: 10px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .score-big-div{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 600px;
+                width: 100%;
+                height: 100%;
+                .score-big-article{
+                    padding-bottom: 100px;
+                    h2{
+                        font-weight: 700;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    a{
+                        width: 350px !important;
+                        font-size: 18px;
+                        @media  screen and (max-width: 400px) {
+                            width: 260px !important;
+                        }
+                    }
+                    .register {
+                        align-items: center;
+                        color: $secondary;
+                        margin-bottom: 2rem;
+                    }
+                    .register:hover {
+                        color: white;
+                        background-color: $secondary;
+                        transition: background-color 0.9s ease, color 0.9s ease;
+                    }
+                    .share:hover{
+                        color: $secondary;
+                    }
+
+                }
+            }
+        }
+    }
+}

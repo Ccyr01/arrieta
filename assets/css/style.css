@@ -12680,19 +12680,43 @@ p.text-center {
   text-align: center;
   color: #ed7766;
 }
-.hometown-hero-body .slanted {
+.hometown-hero-body .title h1 {
+  font-weight: 800;
+}
+.hometown-hero-body .title {
+  display: flex;
+  flex-direction: column;
+}
+.hometown-hero-body .title .h1-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 80px;
+}
+.hometown-hero-body .slanted-top {
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: 300px;
+  align-items: center;
   background-color: #0033a0; /* For browsers that do not support gradients */
-  background-image: linear-gradient(5deg, #fff 0%, #0033a0 49%, #0033a0 50%, #fff 100%);
+  background-image: linear-gradient(178deg, #0033a0 0%, #0033a0 49%, #fff 50%, #fff 100%);
 }
-.hometown-hero-body .slanted h1 {
-  font-size: 60px;
+.hometown-hero-body .nominations {
+  padding-top: 5px;
 }
 .hometown-hero-body .nominations .nominations-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hometown-hero-body .nominations .nominations-div h2 {
+  font-weight: 700;
+}
+.hometown-hero-body .nominations .nominations-div h2,
+.hometown-hero-body .nominations .nominations-div p {
+  max-width: 800px;
 }
 .hometown-hero-body .nominations .nominations-div a {
   align-items: center;
