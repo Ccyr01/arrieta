@@ -11990,11 +11990,11 @@ nav .container {
   position: absolute;
 }
 .home .intro-section .triangle-2 {
-  background-color: #45bce5;
+  background-color: #0E1941;
   clip-path: polygon(100% 13%, 0 100%, 100% 100%);
 }
 .home .intro-section .triangle-3 {
-  background-color: #0E1941;
+  background-color: #45bce5;
   clip-path: polygon(0 13%, 0 100%, 100% 100%);
 }
 .home .intro-section .intro-pic-container {
@@ -12009,7 +12009,6 @@ nav .container {
 @media screen and (max-width: 664px) {
   .home .intro-section .intro-pic-container {
     flex-direction: column-reverse;
-    margin-top: 50px;
     align-items: center;
   }
 }
@@ -12031,19 +12030,34 @@ nav .container {
   }
 }
 .home .intro-section #overlay2 {
-  padding: 0 5rem;
+  padding: 0 2rem;
   top: 70px;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-  max-width: 80%;
-  padding: 15px;
+}
+@media screen and (max-width: 664px) {
+  .home .intro-section #overlay2 {
+    padding: 0;
+  }
+}
+.home .intro-section #overlay2 .text-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+@media screen and (max-width: 664px) {
+  .home .intro-section #overlay2 .text-background {
+    width: 100%;
+  }
+}
+.home .intro-section #overlay2 h2 {
+  color: #0033a0;
 }
 .home .intro-section #overlay2 p {
   color: black;
@@ -12512,6 +12526,8 @@ iframe {
   background: var(--clr-grey-10);
   z-index: 200;
   transition: all 1s ease-out;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar-menu a {
   color: white;
@@ -12520,20 +12536,30 @@ iframe {
   width: 100%;
 }
 .sidebar-menu #close {
+  position: absolute;
+  padding-top: 20px;
+  padding-right: 20px;
+  top: 2;
+  right: 0;
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 .sidebar-menu ul {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .sidebar-menu ul li {
   width: 80%;
 }
-.sidebar-menu ul .close-button {
+.sidebar-menu ul #close-button {
   text-align: right;
 }
 
 .sidebar-menu.show {
+  margin-top: 60px;
   right: 0;
 }
 
