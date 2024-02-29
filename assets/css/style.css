@@ -11975,7 +11975,7 @@ nav .container {
 }
 .home .intro-section .triangle-container {
   width: 100vw;
-  height: 500px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -12017,7 +12017,7 @@ nav .container {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("../../images/oscar.jpg");
+  background-image: url("../../images/OscarArrieta.png");
   background-position: left 10rem bottom 20px;
 }
 @media (max-width: 991.98px) {
