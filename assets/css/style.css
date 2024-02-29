@@ -12296,12 +12296,13 @@ nav .container {
   z-index: 15;
 }
 .home .fixed-icons i {
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 10px;
-  color: white; /* Adjust the color as needed */
+  color: #ed7766; /* Adjust the color as needed */
 }
 .home .fixed-icons i:hover {
-  color: #ff0000; /* Change color on hover */
+  color: yellow;
+  cursor: pointer;
 }
 .home .card-box {
   padding: 5rem 0;

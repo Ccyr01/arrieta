@@ -345,13 +345,14 @@
 
   /* Style the icons as needed */
   .fixed-icons i {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 10px;
-    color: white; /* Adjust the color as needed */
+    color: $secondary; /* Adjust the color as needed */
   }
   /* Optional: Add hover effects or animations */
   .fixed-icons i:hover {
-    color: #ff0000; /* Change color on hover */
+    color: yellow;
+    cursor: pointer;
   }
   //CARDS--------------------------------
   .card-box {
