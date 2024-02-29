@@ -13041,6 +13041,15 @@ p.text-center {
     width: 120px;
   }
 }
+.insurance-links-section .links-container .insurance-img:hover {
+  cursor: pointer;
+  box-shadow: 2px 12px 10px 1px #0033a0;
+  filter: grayscale(50%);
+  transform: scale(1.1);
+}
+.insurance-links-section .links-container .insurance-img:hover h2 {
+  background-color: #ed7766;
+}
 .insurance-links-section .links-container .home {
   background-image: url("../../images/emergency-coverage.jpg");
   background-size: cover;
