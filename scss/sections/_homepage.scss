@@ -57,7 +57,7 @@
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
-        background-image: url("/images/oscar.jpg");
+        background-image: url("../../images/oscar.jpg");
         background-position: left 10rem bottom 20px;
         @include media-breakpoint-down(lg) {
           background-position: left 3rem bottom 20px;

@@ -12017,7 +12017,7 @@ nav .container {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("/images/oscar.jpg");
+  background-image: url("../../images/oscar.jpg");
   background-position: left 10rem bottom 20px;
 }
 @media (max-width: 991.98px) {
