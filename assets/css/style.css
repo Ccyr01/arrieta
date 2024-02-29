@@ -11962,7 +11962,7 @@ nav .container {
 }
 .home .intro-section {
   padding-top: 20px;
-  height: 720px;
+  height: 650px;
   background-color: white;
 }
 @media screen and (max-width: 664px) {
@@ -12520,7 +12520,7 @@ iframe {
 .sidebar-menu {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -120%;
   width: 300px;
   height: 100%;
   background: var(--clr-grey-10);
@@ -12544,6 +12544,11 @@ iframe {
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+@media screen and (max-width: 523px) {
+  .sidebar-menu #close {
+    padding-top: 30px;
+  }
 }
 .sidebar-menu ul {
   width: 100%;
@@ -13020,8 +13025,20 @@ p.text-center {
 }
 @media screen and (max-width: 620px) {
   .insurance-links-section .links-container .insurance-img {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .insurance-links-section .links-container .insurance-img {
     height: 150px;
     width: 150px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .insurance-links-section .links-container .insurance-img {
+    height: 120px;
+    width: 120px;
   }
 }
 .insurance-links-section .links-container .home {
