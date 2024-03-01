@@ -12823,7 +12823,7 @@ p.text-center {
   list-style: none;
   background: #fff;
   border-radius: 8px;
-  height: 550px;
+  height: 420px;
   display: flex;
   cursor: pointer;
   background-color: #0E1941;
@@ -12847,11 +12847,6 @@ p.text-center {
   width: 300px;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border: 4px solid #fff;
-}
-.hometown-hero-body .heros .card .img:hover img {
-  width: 350px;
-  transition: transform 0.9s ease;
 }
 .hometown-hero-body .heros .card h2 {
   font-weight: 500;

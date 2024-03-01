@@ -137,7 +137,7 @@
       background: #fff;
       border-radius: 8px;
       // width: 380px;
-      height: 550px;
+      height: 420px;
       display: flex;
       cursor: pointer;
       background-color: $dark-blue;
@@ -163,14 +163,6 @@
       width: 300px;
       aspect-ratio: 1/1;
       object-fit: cover;
-      // border-radius: 50%;
-      border: 4px solid #fff;
-    }
-    .card .img:hover {
-      img {
-        width: 350px;
-        transition: transform 0.9s ease;
-      }
     }
     .card h2 {
       font-weight: 500;
