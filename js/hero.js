@@ -6,6 +6,7 @@ const popupContainer = document.getElementById('popupContainer');
 const card = document.querySelector('.card');
 
 
+
 // pre: list param to represent an array of student objects,
 //       page param to represent the requested page number
 // post: dom elements inserted
@@ -19,8 +20,7 @@ function showPage(list) {
       list[i].picture.thumbnail,
       list[i].name.first,
       list[i].name.last,
-      list[i].email,
-      list[i].registered.date
+      list[i].bio
     );
   }
 }
@@ -129,30 +129,30 @@ const dragStop = () => {
 };
 const autoPlay = () => {
   // if(window.innerWidth < 800)return;
-  // timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 3500);
+  // timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 300);
 };
 autoPlay();
-const infiniteScroll = () => {
-  if (carousel.scrollLeft === 0) {
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
-  } else if (
-    Math.ceil(carousel.scrollLeft) ===
-    carousel.scrollWidth - carousel.offsetWidth
-  ) {
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
-  }
-  //clear existing timeout and start autoplay if
-  // the mouse isn't over the carousel
-  clearTimeout(timeoutId);
-  if (!wrapper.matches(":hover")) autoPlay();
-};
+// const infiniteScroll = () => {
+//   if (carousel.scrollLeft === 0) {
+//     carousel.classList.add("no-transition");
+//     carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+//     carousel.classList.remove("no-transition");
+//   } else if (
+//     Math.ceil(carousel.scrollLeft) ===
+//     carousel.scrollWidth - carousel.offsetWidth
+//   ) {
+//     carousel.classList.add("no-transition");
+//     carousel.scrollLeft = carousel.offsetWidth;
+//     carousel.classList.remove("no-transition");
+//   }
+//   //clear existing timeout and start autoplay if
+//   // the mouse isn't over the carousel
+//   clearTimeout(timeoutId);
+//   if (!wrapper.matches(":hover")) autoPlay();
+// };
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
+// carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);

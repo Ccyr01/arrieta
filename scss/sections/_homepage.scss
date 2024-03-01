@@ -32,12 +32,12 @@
       position: absolute;
     }
     .triangle-2 {
-      background-color: $dark-blue;
+      background-color: $header-color;
       clip-path: polygon(100% 13%, 0 100%, 100% 100%);
     }
 
     .triangle-3 {
-      background-color: $header-color;
+      background-color: $dark-blue;
       clip-path: polygon(0 13%, 0 100%, 100% 100%);
     }
     .intro-pic-container {
@@ -102,6 +102,7 @@
         font-weight: 700;
       }
       a {
+        margin-top: 10px;
         align-items: center;
         border: solid 3px $secondary;
         color: $secondary;

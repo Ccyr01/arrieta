@@ -49,6 +49,7 @@
                 background-color: white;
                 display: flex;
                 justify-content: space-between;
+                margin-top: 5rem;
                 @include media-breakpoint-down(md){
                     flex-direction: column;
                 }

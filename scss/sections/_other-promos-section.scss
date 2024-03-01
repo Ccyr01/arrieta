@@ -1,0 +1,23 @@
+@use "../custom" as *;
+
+.other-promos-section{
+    .three-div-parent{
+        height:600px;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .promo{
+            background-image: url('../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg');
+            background-size: cover;
+            background-position: bottom center;
+            height: 100%;
+            width: 100%;
+            h3{
+                color: black;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}

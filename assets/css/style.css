@@ -11990,11 +11990,11 @@ nav .container {
   position: absolute;
 }
 .home .intro-section .triangle-2 {
-  background-color: #0E1941;
+  background-color: #45bce5;
   clip-path: polygon(100% 13%, 0 100%, 100% 100%);
 }
 .home .intro-section .triangle-3 {
-  background-color: #45bce5;
+  background-color: #0E1941;
   clip-path: polygon(0 13%, 0 100%, 100% 100%);
 }
 .home .intro-section .intro-pic-container {
@@ -12065,6 +12065,7 @@ nav .container {
   font-weight: 700;
 }
 .home .intro-section #overlay2 a {
+  margin-top: 10px;
   align-items: center;
   border: solid 3px #ed7766;
   color: #ed7766;
@@ -12496,6 +12497,7 @@ iframe {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  margin-top: 5rem;
 }
 @media (max-width: 767.98px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div {
@@ -12761,6 +12763,7 @@ p.text-center {
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 .hometown-hero-body .heros {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12779,7 +12782,7 @@ p.text-center {
   color: white;
   text-align: center;
   line-height: 50px;
-  border-radius: 50%;
+  border-radius: 20%;
   cursor: pointer;
   font-size: 1.25rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -12794,8 +12797,8 @@ p.text-center {
 .hometown-hero-body .heros .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 12px);
-  gap: 5px;
+  grid-auto-columns: 33.3333333333%;
+  gap: 11px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -12820,7 +12823,7 @@ p.text-center {
   list-style: none;
   background: #fff;
   border-radius: 8px;
-  height: 450px;
+  height: 550px;
   display: flex;
   cursor: pointer;
   background-color: #0E1941;
@@ -12841,17 +12844,18 @@ p.text-center {
   align-items: center;
 }
 .hometown-hero-body .heros .card .img img {
-  width: 200px;
+  width: 300px;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 50%;
   border: 4px solid #fff;
 }
 .hometown-hero-body .heros .card .img:hover img {
-  width: 300px;
+  width: 350px;
+  transition: transform 0.9s ease;
 }
 .hometown-hero-body .heros .card h2 {
   font-weight: 500;
+  text-align: center;
   font-size: 1.56rem;
   margin: 30px 0 5px;
   color: white;
@@ -13072,6 +13076,26 @@ p.text-center {
 .insurance-links-section .links-container .commercial {
   background-image: url("../../images/commercialInsurance.jpg");
   background-size: cover;
+}
+
+.other-promos-section .three-div-parent {
+  height: 600px;
+  background-color: #0033a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-promos-section .three-div-parent .promo {
+  background-image: url("../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 100%;
+  width: 100%;
+}
+.other-promos-section .three-div-parent .promo h3 {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
