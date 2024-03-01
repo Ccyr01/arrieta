@@ -255,82 +255,9 @@
     }
   }
 
-  /* filing a claim-------------------------*/
+ 
 
-  .filing-a-claim {
-    background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .filing-a-claim-div {
-    width: 50%;
-    text-align: center;
-    p {
-      color: white;
-    }
-    a {
-      color: $header-color;
-      text-decoration: none;
-    }
-    h2 {
-      color: $header-color;
-    }
-  }
 
-  //Serving el paso section---------------------------
-
-  .serving-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../images/elpaso.jpg");
-    height: 600px;
-    @include media-breakpoint-down(sm) {
-      background-position: right;
-      background-size: cover;
-    }
-    #overlay2 {
-      padding: 0 5rem;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      height: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      background-color: $overlay2;
-      max-width: 80%;
-      padding: 15px;
-      a {
-        align-items: center;
-        border: solid 3px $secondary;
-        color: $secondary;
-      }
-      a:hover {
-        color: white;
-        background-color: $secondary;
-        transition: background-color 0.9s ease, color 0.9s ease;
-      }
-    }
-    h2 {
-      width: 100%;
-      max-width: 400px;
-      color: white;
-    }
-    p {
-      text-align: center;
-      color: white;
-    }
-    a {
-      margin-bottom: 30px;
-      border: $secondary;
-    }
-  }
 
   //Fixed Icons----------------------------------
   .fixed-icons {

@@ -11882,7 +11882,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  margin: 0 15px 2% 0;
+  margin: 0 15px 0;
   height: 70px;
 }
 
@@ -11956,7 +11956,6 @@ nav .container {
 .home {
   color: #0033a0;
   background-color: white;
-  /* filing a claim-------------------------*/
   /* Style the icons as needed */
   /* Optional: Add hover effects or animations */
 }
@@ -12212,79 +12211,6 @@ nav .container {
 }
 .home .form-section h2 {
   justify-content: center;
-}
-.home .filing-a-claim {
-  background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home .filing-a-claim-div {
-  width: 50%;
-  text-align: center;
-}
-.home .filing-a-claim-div p {
-  color: white;
-}
-.home .filing-a-claim-div a {
-  color: #45bce5;
-  text-decoration: none;
-}
-.home .filing-a-claim-div h2 {
-  color: #45bce5;
-}
-.home .serving-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../images/elpaso.jpg");
-  height: 600px;
-}
-@media (max-width: 575.98px) {
-  .home .serving-container {
-    background-position: right;
-    background-size: cover;
-  }
-}
-.home .serving-container #overlay2 {
-  padding: 0 5rem;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(0, 51, 160, 0.2);
-  max-width: 80%;
-  padding: 15px;
-}
-.home .serving-container #overlay2 a {
-  align-items: center;
-  border: solid 3px #ed7766;
-  color: #ed7766;
-}
-.home .serving-container #overlay2 a:hover {
-  color: white;
-  background-color: #ed7766;
-  transition: background-color 0.9s ease, color 0.9s ease;
-}
-.home .serving-container h2 {
-  width: 100%;
-  max-width: 400px;
-  color: white;
-}
-.home .serving-container p {
-  text-align: center;
-  color: white;
-}
-.home .serving-container a {
-  margin-bottom: 30px;
-  border: #ed7766;
 }
 .home .fixed-icons {
   position: fixed;
@@ -13081,14 +13007,19 @@ p.text-center {
 }
 
 .other-promos-section .three-div-parent {
-  height: 600px;
+  height: 400px;
+  margin-bottom: 20px;
   background-color: #0033a0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767.98px) {
+  .other-promos-section .three-div-parent {
+    flex-direction: column;
+  }
+}
 .other-promos-section .three-div-parent .promo {
-  background-image: url("../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg");
   background-size: cover;
   background-position: bottom center;
   height: 100%;
@@ -13097,7 +13028,142 @@ p.text-center {
 .other-promos-section .three-div-parent .promo h3 {
   color: black;
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.other-promos-section .three-div-parent #careers {
+  background-image: url("../../images/careerPic.jpg");
+}
+.other-promos-section .three-div-parent #careers .flex-apply {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.other-promos-section .three-div-parent #careers .flex-apply a {
+  border: solid 3px black;
+  background-color: #0033a0;
+  color: white;
+}
+.other-promos-section .three-div-parent #quotes {
+  background-image: url("../../images/");
+}
+.other-promos-section .three-div-parent #quotes #overlay2 {
+  background-color: black;
+  margin-top: -0.5rem;
+  width: 100%;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.other-promos-section .three-div-parent #quotes #overlay2 .input-group {
+  width: 15rem;
+}
+.other-promos-section .three-div-parent #quotes #overlay2 p {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+.other-promos-section .three-div-parent #quotes #overlay2 a {
+  align-items: flex-start;
+  border: solid 3px #ed7766;
+  color: black;
+}
+.other-promos-section .three-div-parent #quotes #overlay2 a:hover {
+  color: #0E1941;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+.other-promos-section .three-div-parent #coffee {
+  background-image: url("../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg");
+}
+
+.contact-services-claims .contact-wrapper {
+  display: flex;
+  /* filing a claim-------------------------*/
+}
+.contact-services-claims .contact-wrapper .filing-a-claim {
+  background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-services-claims .contact-wrapper .filing-a-claim-div {
+  width: 50%;
+  text-align: center;
+}
+.contact-services-claims .contact-wrapper .filing-a-claim-div p {
+  color: white;
+}
+.contact-services-claims .contact-wrapper .filing-a-claim-div a {
+  color: #45bce5;
+  text-decoration: none;
+}
+.contact-services-claims .contact-wrapper .filing-a-claim-div h2 {
+  color: #45bce5;
+}
+.contact-services-claims .serving-ep {
+  width: 100%;
+}
+.contact-services-claims .serving-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/elpaso.jpg");
+  height: 100%;
+}
+@media (max-width: 575.98px) {
+  .contact-services-claims .serving-container {
+    background-position: right;
+    background-size: cover;
+  }
+}
+.contact-services-claims .serving-container #overlay2 {
+  padding: 0 5rem;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 51, 160, 0.2);
+  max-width: 80%;
+  padding: 15px;
+}
+.contact-services-claims .serving-container #overlay2 a {
+  align-items: center;
+  border: solid 3px #ed7766;
+  color: #ed7766;
+}
+.contact-services-claims .serving-container #overlay2 a:hover {
+  color: white;
+  background-color: #ed7766;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+.contact-services-claims .serving-container h2 {
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+.contact-services-claims .serving-container p {
+  text-align: center;
+  color: white;
+}
+.contact-services-claims .serving-container a {
+  margin-bottom: 30px;
+  border: #ed7766;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,13 +2,16 @@
 
 .other-promos-section{
     .three-div-parent{
-        height:600px;
+        height:400px;
+        margin-bottom: 20px;
         background-color: $primary;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include media-breakpoint-down(md){
+            flex-direction: column;
+        }
         .promo{
-            background-image: url('../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg');
             background-size: cover;
             background-position: bottom center;
             height: 100%;
@@ -16,8 +19,150 @@
             h3{
                 color: black;
                 text-align: center;
-                margin-top: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                background-color: rgba(255,255,255,0.6);
+            }
+
+            
+        }
+        #careers{
+            background-image: url('../../images/careerPic.jpg');
+                .flex-apply{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    a{
+                        border: solid 3px black;
+                        background-color: $primary;
+                        color: white;
+                    }
+                }
+        }
+        #quotes{
+            background-image: url('../../images/');
+            
+            #overlay2 {
+                background-color: black;
+                margin-top:-.5rem ;
+                width: 100%;
+                height: 330px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 5px;
+                .input-group{
+                    width: 15rem;
+                }
+                p {
+                  color: black;
+                  font-size: 18px;
+                  font-weight: 700;
+                }
+                a {
+                  align-items:flex-start;
+                  border: solid 3px $secondary;
+                  color: black;
+                }
+                a:hover {
+                  color: $dark-blue;
+                  background-color: $secondary;
+                  transition: background-color 0.9s ease, color 0.9s ease;
+                }
+              }
+        }
+        #coffee{
+            background-image: url('../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg');
+        }
+
+    }
+    
+}
+.contact-services-claims{
+    .contact-wrapper{
+        display: flex;
+/* filing a claim-------------------------*/
+        .filing-a-claim {
+            background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .filing-a-claim-div {
+            width: 50%;
+            text-align: center;
+            p {
+            color: white;
+            }
+            a {
+            color: $header-color;
+            text-decoration: none;
+            }
+            h2 {
+            color: $header-color;
             }
         }
     }
+//Serving el paso section---------------------------
+    .serving-ep{
+        width:100%
+    }
+  .serving-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/elpaso.jpg");
+    height: 100%;
+    @include media-breakpoint-down(sm) {
+      background-position: right;
+      background-size: cover;
+    }
+    #overlay2 {
+      padding: 0 5rem;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-color: $overlay2;
+      max-width: 80%;
+      padding: 15px;
+      a {
+        align-items: center;
+        border: solid 3px $secondary;
+        color: $secondary;
+      }
+      a:hover {
+        color: white;
+        background-color: $secondary;
+        transition: background-color 0.9s ease, color 0.9s ease;
+      }
+    }
+    h2 {
+      width: 100%;
+      max-width: 400px;
+      color: white;
+    }
+    p {
+      text-align: center;
+      color: white;
+    }
+    a {
+      margin-bottom: 30px;
+      border: $secondary;
+    }
+  }
+    
 }
