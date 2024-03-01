@@ -11882,7 +11882,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  margin: 0 15px;
+  margin: 0 15px 2% 0;
   height: 70px;
 }
 
@@ -12408,7 +12408,7 @@ iframe {
 }
 .footer .contact-services-footer .contact-us-footer h4,
 .footer .contact-services-footer .services-footer h4 {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 .footer .contact-services-footer .contact-us-footer p,
@@ -12419,7 +12419,10 @@ iframe {
 .footer .contact-services-footer .services-footer ul {
   color: white;
   list-style-type: none;
-  padding: 0;
+}
+.footer .contact-services-footer .contact-us-footer ul li,
+.footer .contact-services-footer .services-footer ul li {
+  padding-top: 10px;
 }
 .footer .contact-services-footer .contact-us-footer:not(:last-child),
 .footer .contact-services-footer .services-footer:not(:last-child) {
@@ -12446,6 +12449,9 @@ iframe {
 }
 .footer .bottom-row-footer .socialIcons i {
   font-size: 1.6rem;
+}
+.footer .bottom-row-footer .socialIcons .menu-footer {
+  cursor: pointer;
 }
 
 .home-insurance .home-insurance-section {
@@ -12613,6 +12619,11 @@ html {
   justify-content: center;
   background-color: #0E1941;
 }
+@media (max-width: 991.98px) {
+  .flex-map-container {
+    flex-direction: column;
+  }
+}
 .flex-map-container .flex {
   background-color: #0E1941;
   height: 100%;
@@ -12651,10 +12662,6 @@ html {
 }
 .flex-map-container .flex .scrollspy-example span p {
   font-size: 12px;
-}
-
-.outer1 {
-  padding-top: 110px;
 }
 
 h2 {

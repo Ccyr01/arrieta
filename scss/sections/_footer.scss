@@ -31,7 +31,7 @@
             text-align:start;
             margin: 10px;
           h4{
-            font-size: 16px;
+            font-size: 20px;
             color:white;
           }
           p{
@@ -40,7 +40,9 @@
           ul{
             color: white;
             list-style-type: none;
-            padding: 0;         
+            li{
+              padding-top:10px;
+            }        
           }
       }
       .contact-us-footer:not(:last-child),
@@ -66,12 +68,9 @@
         i{
           font-size: 1.6rem;
         } 
-        // .icons-menu-row{
-        //   display:flex;
-        //   .icons-div{
-
-        //   }
-        // }
+        .menu-footer{
+          cursor: pointer;
+        }
       }
     }
   }
