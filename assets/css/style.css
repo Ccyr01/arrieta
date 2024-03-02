@@ -12933,12 +12933,19 @@ p.text-center {
 }
 .insurance-links-section .links-container h2 {
   background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 0 20px;
   text-align: center;
   position: absolute;
   bottom: 10px;
-  width: 100%;
+  width: calc(100% - 40px);
   font-weight: bolder;
   color: black;
+}
+@media screen and (max-width: 1277px) {
+  .insurance-links-section .links-container h2 {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 620px) {
   .insurance-links-section .links-container h2 {
@@ -12958,8 +12965,8 @@ p.text-center {
 }
 @media screen and (max-width: 956px) and (min-width: 740px) {
   .insurance-links-section .links-container .insurance-img {
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
   }
 }
 @media screen and (max-width: 620px) {
@@ -13031,6 +13038,9 @@ p.text-center {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 5rem;
 }
 .other-promos-section .three-div-parent #careers {
   background-image: url("../../images/careerPic.jpg");
@@ -13051,7 +13061,6 @@ p.text-center {
   background-image: url("../../images/");
 }
 .other-promos-section .three-div-parent #quotes #overlay2 {
-  background-color: black;
   margin-top: -0.5rem;
   width: 100%;
   height: 330px;
@@ -13060,7 +13069,6 @@ p.text-center {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
 }
 .other-promos-section .three-div-parent #quotes #overlay2 .input-group {
@@ -13074,7 +13082,7 @@ p.text-center {
 .other-promos-section .three-div-parent #quotes #overlay2 a {
   align-items: flex-start;
   border: solid 3px #ed7766;
-  color: black;
+  color: white;
 }
 .other-promos-section .three-div-parent #quotes #overlay2 a:hover {
   color: #0E1941;

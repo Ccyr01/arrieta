@@ -22,6 +22,9 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
                 background-color: rgba(255,255,255,0.6);
+                border-radius: 10px;
+                padding: 10px;
+                margin:0 5rem;
             }
 
             
@@ -46,7 +49,7 @@
             background-image: url('../../images/');
             
             #overlay2 {
-                background-color: black;
+                // background-color: black;
                 margin-top:-.5rem ;
                 width: 100%;
                 height: 330px;
@@ -55,7 +58,7 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                background-color: rgba(255, 255, 255, 0.3);
+                // background-color: rgba(255, 255, 255, 0.3);
                 border-radius: 5px;
                 .input-group{
                     width: 15rem;
@@ -68,7 +71,7 @@
                 a {
                   align-items:flex-start;
                   border: solid 3px $secondary;
-                  color: black;
+                  color: white;
                 }
                 a:hover {
                   color: $dark-blue;
