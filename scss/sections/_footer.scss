@@ -27,9 +27,14 @@
       }
       .contact-us-footer,
       .services-footer {
+
             flex: 1;
             text-align:start;
             margin: 10px;
+          a{
+            color: white;
+            text-decoration: none;
+          }
           h4{
             font-size: 20px;
             color:white;

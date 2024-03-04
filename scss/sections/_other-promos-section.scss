@@ -1,7 +1,12 @@
 @use "../custom" as *;
 
 .other-promos-section {
+  margin: 5rem 0;
+  @include media-breakpoint-down(md){
+    margin: 10rem 0;
+  }
   .three-div-parent {
+    margin-top: 20px;
     height: 400px;
     margin-bottom: 20px;
     background-color: $primary;
@@ -10,6 +15,7 @@
     align-items: center;
     @include media-breakpoint-down(md) {
       flex-direction: column;
+
     }
     .promo {
       background-size: cover;
@@ -21,6 +27,17 @@
       align-items: center;
       justify-content: center;
       padding: 30px 30px;
+
+      .row{
+        display: flex;
+        @include media-breakpoint-down(md){
+          flex-direction: column;
+        }
+        
+        .dropdown{
+          margin-bottom: 1.5rem;
+        }
+      }
       .input-group-text {
         border-radius: 10px 0px 0px 10px;
       }
@@ -55,12 +72,19 @@
           color: white;
         }
       }
+      @include media-breakpoint-down(lg){
+        background: black;
+      }
     }
     #quotes {
-      background-image: url("../../images/");
+      text-align: center;
+      @include media-breakpoint-down(md){
+        width: 50%;
+      }
       .btn {
         background-color: white;
         color: $primary;
+        
       }
       #overlay2 {
         // background-color: black;
@@ -74,8 +98,16 @@
         text-align: center;
         // background-color: rgba(255, 255, 255, 0.3);
         border-radius: 5px;
+        @include media-breakpoint-down(md){
+          width: 50%;
+        }
         .input-group {
           width: 15rem;
+          display: flex;
+          flex-direction: row;
+          @include media-breakpoint-down(lg){
+            flex-direction: column;
+          }
         }
         p {
           color: black;
@@ -95,7 +127,8 @@
       }
     }
     #coffee {
-      background-image: url("../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg");
+      background-image: url("../../images/coffee.jpg");
+      background-position: center;
     }
   }
 }
@@ -125,6 +158,12 @@
     }
   }
   //Serving el paso section---------------------------
+  .contact-wrapper{
+    display: flex;
+    @include media-breakpoint-down(lg){
+      flex-direction: column;
+    }
+  }
   .serving-ep {
     width: 100%;
   }

@@ -11926,7 +11926,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-item {
-  color: #45bce5 !important;
+  color: #000 !important;
 }
 
 body {
@@ -11956,8 +11956,6 @@ nav .container {
 .home {
   color: #0033a0;
   background-color: white;
-  /* Style the icons as needed */
-  /* Optional: Add hover effects or animations */
 }
 .home .intro-section {
   padding-top: 20px;
@@ -12074,81 +12072,6 @@ nav .container {
   background-color: #ed7766;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
-.home #video_container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 70px;
-  z-index: 0;
-}
-.home #overlay {
-  padding: 0 5rem;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-.home #overlay > div {
-  background-color: rgba(255, 255, 255, 0.35);
-  max-width: 80%;
-  padding: 15px;
-}
-@media (max-width: 575.98px) {
-  .home #overlay > div {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 0;
-    max-width: 100%;
-  }
-}
-.home #overlay h2 {
-  color: #45bce5;
-  margin-bottom: 10px;
-  text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 575.98px) {
-  .home #overlay h2 {
-    font-size: medium;
-  }
-}
-.home #overlay p {
-  margin: 0;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 575.98px) {
-  .home #overlay p {
-    display: none;
-  }
-}
-.home #overlay a {
-  color: #45bce5;
-}
-@media (max-width: 575.98px) {
-  .home #overlay a {
-    font-size: medium;
-    margin-top: 0px;
-    padding-top: 0;
-  }
-}
-@media (max-width: 575.98px) {
-  .home #overlay .call-today-div > p {
-    font-size: small;
-  }
-}
-.home #overlay .call-today-div .fa-phone {
-  color: #ed7766;
-}
-.home #overlay .phone {
-  text-decoration: none;
-  color: #45bce5;
-  font-weight: 700;
-}
 .home #quote {
   font-size: 32px;
   font-weight: bold;
@@ -12212,25 +12135,6 @@ nav .container {
 .home .form-section h2 {
   justify-content: center;
 }
-.home .fixed-icons {
-  position: fixed;
-  top: 50%;
-  left: 10px; /* Adjust the right distance as needed */
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 15;
-}
-.home .fixed-icons i {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #ed7766; /* Adjust the color as needed */
-}
-.home .fixed-icons i:hover {
-  color: yellow;
-  cursor: pointer;
-}
 .home .card-box {
   padding: 5rem 0;
   display: flex;
@@ -12268,6 +12172,12 @@ nav .container {
 .home .card-box .card-body p {
   color: white;
 }
+@media (max-width: 991.98px) {
+  .home .contact-services-claims {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .slanted {
   height: 200px;
   background-color: #0033a0; /* For browsers that do not support gradients */
@@ -12291,8 +12201,51 @@ nav .container {
   width: 100%;
 }
 
-iframe {
-  aspect-ratio: 16/9;
+/* Style the icons as needed */
+.fixed-icons i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ed7766; /* Adjust the color as needed */
+}
+
+/* Optional: Add hover effects or animations */
+.fixed-icons i:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.fixed-icons {
+  position: fixed;
+  top: 50%;
+  left: 10px; /* Adjust the right distance as needed */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 15;
+}
+.fixed-icons .icon-container {
+  position: relative;
+  display: inline-block;
+}
+.fixed-icons .icon-description {
+  position: absolute;
+  left: 100%; /* Adjust this value as needed */
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s linear 0.5s; /* Smooth transition for the opacity */
+  /* Additional styling for the description */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+.fixed-icons .icon-container:hover .icon-description {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* This removes the delay when hovering */
 }
 
 .footer {
@@ -12331,6 +12284,11 @@ iframe {
   flex: 1;
   text-align: start;
   margin: 10px;
+}
+.footer .contact-services-footer .contact-us-footer a,
+.footer .contact-services-footer .services-footer a {
+  color: white;
+  text-decoration: none;
 }
 .footer .contact-services-footer .contact-us-footer h4,
 .footer .contact-services-footer .services-footer h4 {
@@ -12768,7 +12726,7 @@ p.text-center {
   transform: scaleX(0.9) scaleY(0.9);
 }
 .hometown-hero-body .heros .carousel .card:hover {
-  transform: scaleX(1.1) scaleY(1.1);
+  transform: scaleX(1.05) scaleY(1.05);
 }
 .hometown-hero-body .heros .card .img {
   background: #0E1941;
@@ -13036,7 +12994,16 @@ p.text-center {
   background-size: cover;
 }
 
+.other-promos-section {
+  margin: 5rem 0;
+}
+@media (max-width: 767.98px) {
+  .other-promos-section {
+    margin: 10rem 0;
+  }
+}
 .other-promos-section .three-div-parent {
+  margin-top: 20px;
   height: 400px;
   margin-bottom: 20px;
   background-color: #0033a0;
@@ -13059,6 +13026,17 @@ p.text-center {
   align-items: center;
   justify-content: center;
   padding: 30px 30px;
+}
+.other-promos-section .three-div-parent .promo .row {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .other-promos-section .three-div-parent .promo .row {
+    flex-direction: column;
+  }
+}
+.other-promos-section .three-div-parent .promo .row .dropdown {
+  margin-bottom: 1.5rem;
 }
 .other-promos-section .three-div-parent .promo .input-group-text {
   border-radius: 10px 0px 0px 10px;
@@ -13087,8 +13065,18 @@ p.text-center {
   background-color: #0033a0;
   color: white;
 }
+@media (max-width: 991.98px) {
+  .other-promos-section .three-div-parent #careers {
+    background: black;
+  }
+}
 .other-promos-section .three-div-parent #quotes {
-  background-image: url("../../images/");
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .other-promos-section .three-div-parent #quotes {
+    width: 50%;
+  }
 }
 .other-promos-section .three-div-parent #quotes .btn {
   background-color: white;
@@ -13105,8 +13093,20 @@ p.text-center {
   text-align: center;
   border-radius: 5px;
 }
+@media (max-width: 767.98px) {
+  .other-promos-section .three-div-parent #quotes #overlay2 {
+    width: 50%;
+  }
+}
 .other-promos-section .three-div-parent #quotes #overlay2 .input-group {
   width: 15rem;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 991.98px) {
+  .other-promos-section .three-div-parent #quotes #overlay2 .input-group {
+    flex-direction: column;
+  }
 }
 .other-promos-section .three-div-parent #quotes #overlay2 p {
   color: black;
@@ -13124,7 +13124,8 @@ p.text-center {
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 .other-promos-section .three-div-parent #coffee {
-  background-image: url("../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg");
+  background-image: url("../../images/coffee.jpg");
+  background-position: center;
 }
 
 .contact-services-claims .contact-wrapper {
@@ -13150,6 +13151,14 @@ p.text-center {
 }
 .contact-services-claims .contact-wrapper .filing-a-claim-div h2 {
   color: #45bce5;
+}
+.contact-services-claims .contact-wrapper {
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .contact-services-claims .contact-wrapper {
+    flex-direction: column;
+  }
 }
 .contact-services-claims .serving-ep {
   width: 100%;
@@ -13206,6 +13215,10 @@ p.text-center {
 .contact-services-claims .serving-container a {
   margin-bottom: 30px;
   border: #ed7766;
+}
+
+#contact {
+  margin-top: 7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

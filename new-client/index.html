@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gameday Giveaways</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
 </head>
@@ -89,25 +89,24 @@
                 Insurance Products
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="homeInsurance/index.html">Home Insurance</a></li>
-                <li><a class="dropdown-item" href="autoInsurance/index.html">Auto Insurance</a></li>
-                <li><a class="dropdown-item" href="lifeInsurance/index.html">Life Insurance</a></li>              
-                <li><a class="dropdown-item" href="commercialInsurance/index.html">Commercial Insurance</a></li>
+                <li><a class="dropdown-item" href="../homeInsurance/index.html">Home Insurance</a></li>
+                <li><a class="dropdown-item" href="../autoInsurance/index.html">Auto Insurance</a></li>
+                <li><a class="dropdown-item" href="../lifeInsurance/index.html">Life Insurance</a></li>              
+                <li><a class="dropdown-item" href="../commercialInsurance/index.html">Commercial Insurance</a></li>
                 </a></li>
     
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="promo/index.html" target="_blank">Referral</a>
+                <a class="nav-link" href="../contact/index.html" target="_blank">Contact</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="../contact/index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact
+                <a class="nav-link dropdown-toggle" href="../referral/index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Referral
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="">Welcome</a></li>
+                <li><a class="dropdown-item" href="../referral/index.html">Refer Somebody</a></li>
                 <li><a class="dropdown-item" href="../new-client/index.html">New Client</a></li>
-                </ul>
                 </ul>
             </li>
             <li class="nav-item">
@@ -121,21 +120,76 @@
         </div>
     </nav>
     
-    <section class="gameday-section">
-        <div class="gameday-div">
-            <div class="basketball-img-div">
-                <img src="../images/basketball.jpeg" alt="">
+    <section id="contact">
+        <div class="container-lg">
+          
+          <div class="text-center">
+            <h2 class="text-uppercase">Welcome!</h2>
+            <img src="../images/oscar.jpg" alt="">
+            <p class="lead">Thank you for choosing the Oscar Arrieta agency to protect what you love most. Our agency ranks as one of the best in the state of Texas, we take pride in providing exceptional services, and that is why your opinion is very important to us and will help us to continue to give you and all of our customers a great experience.</p>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              
+              <form>
+                <label for="name" class="form-label">Name:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                </div>
+                <label for="name" class="form-label">Phone Number:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="name" class="form-control" placeholder="e.g. (915) 123-4567" />
+                </div>
+                <label for="email" class="form-label">Email address:</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                </div>
+                <label for="email" class="form-label">Which office did you visit?</label>
+                <select class="form-select" aria-label="Disabled select example">
+                    <option selected>Choose</option>
+                    <option value="1">10110 Montwood Dr. Ste. A</option>
+                    <option value="2">1506 N Lee Trevino Dr. Ste. D-1</option>
+                    <option value="3">801 N Fabens Rd Ste. B</option>
+                    <option value="4">14010 Horizon Blvd. Ste. D</option>
+
+                </select>
+                <label for="flexRadioDefault1" class="mt-4">Did they print out your Insurance ID cards?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+                
+                
+                
+                <div class="mb-4 mt-5 form-floating">
+                  <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                  <label for="query">Any additional questions/comments?</label>
+                </div>
+                <div class="mb-4 text-center">
+                  <button type="submit" class="btn btn-secondary">Submit</button>
+                </div>
+              </form>
             </div>
-            <div class="score-big-div">
-                <article class="score-big-article">
-                    <h2 class="score-big-header text-uppercase">Score Big!</h2>
-                    <p class="text-capitalize">Register Now for a shot to win spectacular Prizes!</p>
-                    <a href="https://fs21.formsite.com/ovK14V/cpztmvzxym/index" class="register btn btn-primary text-uppercase mb-3" target="_blank">Register Now</a><br>
-                    <a href="https://www.facebook.com/" class="share text-capitalize share mt-3"target="_blank">Share on your social media</a>
-                </article>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
 <!--Bottom Slant-->
     <div class="slanted"></div>
