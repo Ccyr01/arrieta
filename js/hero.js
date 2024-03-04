@@ -2,10 +2,8 @@ const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".controls i");
 const carouselChildren = [...carousel.children];
-const popupContainer = document.getElementById('popupContainer');
-const card = document.querySelector('.card');
-
-
+const popupContainer = document.getElementById("popupContainer");
+const card = document.querySelector(".card");
 
 // pre: list param to represent an array of student objects,
 //       page param to represent the requested page number
@@ -27,7 +25,7 @@ function showPage(list) {
 
 // //pre: take all the necessary elements from the data
 // //post: people's pictures and info displayed
-function insertDomElements(imgSrc, firstName, lastName, email) {
+function insertDomElements(imgSrc, firstName, lastName, bio) {
   const li = document.createElement("li");
   li.setAttribute("class", "card");
   carousel.appendChild(li);
@@ -38,7 +36,9 @@ function insertDomElements(imgSrc, firstName, lastName, email) {
   img.setAttribute("class", "draggable");
   img.setAttribute("src", imgSrc);
   img.setAttribute("alt", "Profile Picture");
-  img.addEventListener('click', () => showImagePopup(imgSrc, `${firstName} ${lastName} - ${email}`));
+  img.addEventListener("click", () => {
+    showImagePopup({ imgSrc, firstName, lastName, bio });
+  });
   div.appendChild(img);
   const h2 = document.createElement("h2");
   h2.innerHTML = `${firstName} ${lastName}`;
@@ -49,35 +49,30 @@ showPage(data);
 
 //POPUP
 // Function to show the image popup with description
-function showImagePopup(imgSrc, description) {
-  console.log('inside showImagePopup');
-  const popup = document.getElementById('imagePopup');
-  popup.innerHTML = `<img src="${imgSrc}" alt="Popup Image"><p>${description}</p>`;
-  popup.style.display = 'block';
+function showImagePopup({ imgSrc, firstName, lastName, bio }) {
+  const popup = document.getElementById("modal");
+  console.log("popup", popup);
+  popup.innerHTML = `<div>
+
+  <h4>${firstName} ${lastName}</h4><p>${bio}</p></div>`;
+  popup.classList.add("show");
 
   // Close the popup when clicking outside of it
-  document.addEventListener('click', closeImagePopup);
+  popup.addEventListener("click", closeImagePopup);
 }
 
 // Function to close the image popup
 function closeImagePopup(event) {
-  const popup = document.getElementById('imagePopup');
-
-  // Check if the click is outside the popup
-  if (!popup.contains(event.target)) {
-    popup.style.display = 'none';
-    document.removeEventListener('click', closeImagePopup);
-  }
+  const popup = document.getElementById("modal");
+  popup.classList.remove("show");
 }
 
 // Hide popup when clicking outside the popup
-window.addEventListener('click', (event) => {
+window.addEventListener("click", (event) => {
   if (event.target === popupContainer) {
-      popupContainer.style.display = 'none';
+    popupContainer.style.display = "none";
   }
 });
-
-
 
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 let isDragging = false,

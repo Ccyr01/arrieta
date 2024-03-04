@@ -1,121 +1,133 @@
 @use "../custom" as *;
 
-.other-promos-section{
-    .three-div-parent{
-        height:400px;
-        margin-bottom: 20px;
-        background-color: $primary;
+.other-promos-section {
+  .three-div-parent {
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+    .promo {
+      background-size: cover;
+      background-position: bottom center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 30px;
+      .input-group-text {
+        border-radius: 10px 0px 0px 10px;
+      }
+      h3 {
+        color: black;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        //background-color: rgba(255, 255, 255, 0.8);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.4) 0%,
+          rgba(255, 255, 255, 0.8) 100%
+        );
+
+        border-radius: 10px;
+        padding: 10px;
+      }
+    }
+    #careers {
+      background-image: url("../../images/careerPic.jpg");
+      .flex-apply {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        a {
+          border: solid 3px black;
+          background-color: $primary;
+          color: white;
+        }
+      }
+    }
+    #quotes {
+      background-image: url("../../images/");
+      .btn {
+        background-color: white;
+        color: $primary;
+      }
+      #overlay2 {
+        // background-color: black;
+        margin-top: -0.5rem;
+        width: 100%;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        @include media-breakpoint-down(md){
-            flex-direction: column;
+        text-align: center;
+        // background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        .input-group {
+          width: 15rem;
         }
-        .promo{
-            background-size: cover;
-            background-position: bottom center;
-            height: 100%;
-            width: 100%;
-            h3{
-                color: black;
-                text-align: center;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                background-color: rgba(255,255,255,0.6);
-                border-radius: 10px;
-                padding: 10px;
-                margin:0 5rem;
-            }
-
-            
+        p {
+          color: black;
+          font-size: 18px;
+          font-weight: 700;
         }
-        #careers{
-            background-image: url('../../images/careerPic.jpg');
-                .flex-apply{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-
-                    a{
-                        border: solid 3px black;
-                        background-color: $primary;
-                        color: white;
-                    }
-                }
+        a {
+          align-items: flex-start;
+          border: solid 3px $secondary;
+          color: white;
         }
-        #quotes{
-            background-image: url('../../images/');
-            
-            #overlay2 {
-                // background-color: black;
-                margin-top:-.5rem ;
-                width: 100%;
-                height: 330px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                // background-color: rgba(255, 255, 255, 0.3);
-                border-radius: 5px;
-                .input-group{
-                    width: 15rem;
-                }
-                p {
-                  color: black;
-                  font-size: 18px;
-                  font-weight: 700;
-                }
-                a {
-                  align-items:flex-start;
-                  border: solid 3px $secondary;
-                  color: white;
-                }
-                a:hover {
-                  color: $dark-blue;
-                  background-color: $secondary;
-                  transition: background-color 0.9s ease, color 0.9s ease;
-                }
-              }
+        a:hover {
+          color: $dark-blue;
+          background-color: $secondary;
+          transition: background-color 0.9s ease, color 0.9s ease;
         }
-        #coffee{
-            background-image: url('../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg');
-        }
-
+      }
     }
-    
+    #coffee {
+      background-image: url("../../images/close-up-cappuccino-coffee-with-art-latte-wooden-table.jpg");
+    }
+  }
 }
-.contact-services-claims{
-    .contact-wrapper{
-        display: flex;
-/* filing a claim-------------------------*/
-        .filing-a-claim {
-            background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .filing-a-claim-div {
-            width: 50%;
-            text-align: center;
-            p {
-            color: white;
-            }
-            a {
-            color: $header-color;
-            text-decoration: none;
-            }
-            h2 {
-            color: $header-color;
-            }
-        }
+.contact-services-claims {
+  .contact-wrapper {
+    display: flex;
+    /* filing a claim-------------------------*/
+    .filing-a-claim {
+      background: linear-gradient(to right, #08112a, #0e1941, #192b5a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-//Serving el paso section---------------------------
-    .serving-ep{
-        width:100%
+    .filing-a-claim-div {
+      width: 50%;
+      text-align: center;
+      p {
+        color: white;
+      }
+      a {
+        color: $header-color;
+        text-decoration: none;
+      }
+      h2 {
+        color: $header-color;
+      }
     }
+  }
+  //Serving el paso section---------------------------
+  .serving-ep {
+    width: 100%;
+  }
   .serving-container {
     display: flex;
     flex-direction: column;
@@ -167,5 +179,4 @@
       border: $secondary;
     }
   }
-    
 }
