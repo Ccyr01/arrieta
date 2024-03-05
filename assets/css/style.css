@@ -12522,6 +12522,7 @@ html {
   color: white;
 }
 .flex-map-container .flex .scrollspy-example {
+  margin-top: 30px;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
   height: 300px;
@@ -12576,6 +12577,26 @@ body {
     width: 800px;
   }
 }
+.clickable-box {
+  display: block;
+  padding: 20px;
+  margin: 35px 0 0 0;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.clickable-box h2 {
+  color: white;
+}
+
+.clickable-box:hover, .clickable-box:focus {
+  background-color: #0056b3; /* Darker shade for hover/focus */
+  outline: none; /* Removes outline for focused divs, add if needed for accessibility */
+}
+
 p.text-center {
   font-size: 20px; /* Adjust the font size as needed */
   line-height: 2; /* Adjust the line height as needed for better readability */
