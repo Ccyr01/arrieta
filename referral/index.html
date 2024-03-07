@@ -98,16 +98,15 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="" target="_blank">Contact</a>
+                <a class="nav-link" href="../contact/index.html" target="_blank">Contact</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="../referral/index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Referral
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../referral/index.html">Refer Somebody</a></li>
-                <li><a class="dropdown-item" href="../new-client/index.html">New Client</a></li>
-                </ul>
+                    <li><a class="dropdown-item" href="../referral/index.html">Refer Somebody</a></li>
+                    <li><a class="dropdown-item" href="../new-client/index.html">New Client</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -131,38 +130,45 @@
           <div class="row justify-content-center my-5">
             <div class="col-lg-6">
               
-              <form>
+                <form action="https://formsubmit.co/ccyrius01@gmail.com" method="POST" class="row g-3 px-5 mt-1" id="contact-form">
                 <label for="email" class="form-label">Your Email address:</label>
                 <div class="input-group mb-4">
                   <span class="input-group-text">
                     <i class="bi bi-envelope-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                  <input type="email" name='email' id="email" class="form-control" placeholder="e.g. mario@example.com" />
                 </div>
-                <label for="name" class="form-label">Your Name:</label>
+                <label for="fname" class="form-label">Your Name:</label>
                 <div class="mb-4 input-group">
                   <span class="input-group-text">
                     <i class="bi bi-person-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                  <input type="text" id="fname" name='fname' class="form-control" placeholder="e.g. Mario" />
                 </div>
-                <label for="email" class="form-label">Referral's Email address:</label>
+                <label for="tel" class="form-label">Your Phone-Number:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
+                  <input type="tel" name='phone' id="phone" class="form-control" placeholder="e.g. (915) 123-4567" />
+                </div>
+                <label for="tel" class="form-label">Referral's Phone-Number:</label>
                 <div class="input-group mb-4">
                   <span class="input-group-text">
                     <i class="bi bi-envelope-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                  <input type="tel" name="referralPhone" id="referralPhone" class="form-control" placeholder="e.g. (915) 123-4567" />
                 </div>
-                <label for="name" class="form-label">Referral's Name:</label>
+                <label for="referralName" class="form-label">Referral's Name:</label>
                 <div class="mb-4 input-group">
                   <span class="input-group-text">
                     <i class="bi bi-person-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                  <input type="text" id="referralName" class="form-control" placeholder="e.g. Mario" />
                 </div>
+                <label for="How-you-find-us">How did you find out about our referral program?</label>
                 <div class="mb-4 mt-5 form-floating">
-                  <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
-                  <label for="query">How did you find out about our referral program?</label>
+                  <textarea class="form-control" name='query' id="query" style="height: 140px" placeholder="query"></textarea>
                 </div>
                 <div class="mb-4 text-center">
                   <button type="submit" class="btn btn-secondary">Submit</button>

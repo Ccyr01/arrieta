@@ -102,16 +102,17 @@
             </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="../referral/index.html" target="_blank">Referral</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Contact
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../referral/index.html">Refer A Friend</a></li>
-            </ul>
-        </li>
+          <a class="nav-link" href="../contact/index.html" target="_blank">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="../referral/index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Referral
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../referral/index.html">Refer Somebody</a></li>
+              <li><a class="dropdown-item" href="../new-client/index.html">New Client</a></li>
+          </ul>
+      </li>
         <li class="nav-item">
             <a class="nav-link" href="../hometownHero/index.html" target="_blank">Hometown Hero</a>
         </li>
@@ -137,63 +138,50 @@
 
 
     <div class = "flex-map-container">
-        <div class="flex btn-group-lg btn-group-horizontal mt-3" id="map">
-            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-                <ul class="nav nav-pills">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-uppercase" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Request A Quote</a>
-                    <ul class="dropdown-menu">
-                        
-                        <li><a class="dropdown-item" href="#scrollspyHeading4">Montwood</a></li>
-                        <li><a class="dropdown-item" href="#scrollspyHeading3">Lee Trevino</a></li>
-                        <li><a class="dropdown-item" href="#scrollspyHeading5">Fabens</a></li>
-                        <li><a class="dropdown-item" href="#scrollspyHeading5">Horizon City</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example links" tabindex="0" style="overflow-y: auto;">
-                <div class="links">
-                  <div class="map-link clickable-box" id="montwood" data-map="map1" tabindex="0"><h2>Montwood</h2>
-                  <p>10110 Montwood Dr.<br>
-                    Ste A<br>
-                    El Paso, TX 79925
+        
+      <div class="flex btn-group-lg btn-group-horizontal" id="map">            
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example links" tabindex="0" style="overflow-y: auto; height:450px" style="margin-top:40px;">
+              <div class="links">
+                <div class="map-link clickable-box" id="montwood" data-map="map1" tabindex="0"><h2>Montwood</h2>
+                <p>10110 Montwood Dr.<br>
+                  Ste A<br>
+                  El Paso, TX 79925
+                  </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
+                <div class="map-link clickable-box" id="leetrevino" data-map="map2" tabindex="0"><h2>Lee Trevino</h2>
+                  <p>1506 N Lee Trevino Dr.<br>
+                    Ste D-1<br>
+                    El Paso, TX 79936
                     </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
-                  <div class="map-link clickable-box" id="leetrevino" data-map="map2" tabindex="0"><h2>Lee Trevino</h2>
-                    <p>1506 N Lee Trevino Dr.<br>
-                      Ste D-1<br>
-                      El Paso, TX 79936
-                      </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
-                  <div class="map-link clickable-box" id="fabens" data-map="map3" tabindex="0"><h2>Fabens</h2>
-                    <p>801 N Fabens Rd.<br>
-                      Ste B<br>
-                      Fabens, TX 79938
-                      </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
+                <div class="map-link clickable-box" id="fabens" data-map="map3" tabindex="0"><h2>Fabens</h2>
+                  <p>801 N Fabens Rd.<br>
+                    Ste B<br>
+                    Fabens, TX 79938
+                    </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
 
-                  <div class="map-link clickable-box" id="horizon" data-map="map4" tabindex="0"><h2>Horizon</h2>
-                    <p>14010 Horizon Blvd.<br>
-                      Ste D<br>
-                      El Paso, TX 79928
-                      </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
+                <div class="map-link clickable-box" id="horizon" data-map="map4" tabindex="0"><h2>Horizon</h2>
+                  <p>14010 Horizon Blvd.<br>
+                    Ste D<br>
+                    El Paso, TX 79928
+                    </p><span><i class="fa-solid fa-location-dot" style="color: white;"></i><p class = "text-uppercase mb-4">Get directions</p></span></div>
 
-                </div>
               </div>
             </div>
-          <div class=" my-3">
-            <div id="map1" class="map mb-2 pl-2 mt-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.0148392046103!2d-106.34810859999999!3d31.7700812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75b3314c93c4f%3A0xab1e01df003a5fd5!2s10110%20Montwood%20Dr%20A%2C%20El%20Paso%2C%20TX%2079925!5e0!3m2!1sen!2sus!4v1709591957843!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id="map2"  class="map mb-2 pl-2" style="display: none;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.651356703653!2d-106.31989792437912!3d31.752716074108438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e744997c995a9f%3A0xf3a4b7a0cf662449!2s1506%20Lee%20Trevino%20Dr%20d1%2C%20El%20Paso%2C%20TX%2079936!5e0!3m2!1sen!2sus!4v1709592836426!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id="map3"  class="map mb-2 pl-2" style="display: none;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d108852.05460334093!2d-106.23573679057364!3d31.50694299901363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x86e712ac26c91333%3A0xca64f8f1f51476c0!2s801%20Fabens%20Rd%20ste%20b%2C%20Fabens%2C%20TX%2079838!3m2!1d31.506950099999997!2d-106.1532898!5e0!3m2!1sen!2sus!4v1709592960582!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
-            </div>
-            <div id="map4"  class="map mb-2 pl-2" style="display: none;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.237684873644!2d-106.19747369999999!3d31.682069600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7402e3ca4459f%3A0x4a381ae37ee6d566!2s14010%20Horizon%20Blvd%2C%20Horizon%20City%2C%20TX%2079928!5e0!3m2!1sen!2sus!4v1709593029661!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
-            </div>
           </div>
-    </div>
+        <div class=" my-3">
+          <div id="map1" class="map mb-2 pl-2 mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.0148392046103!2d-106.34810859999999!3d31.7700812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75b3314c93c4f%3A0xab1e01df003a5fd5!2s10110%20Montwood%20Dr%20A%2C%20El%20Paso%2C%20TX%2079925!5e0!3m2!1sen!2sus!4v1709591957843!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div id="map2"  class="map mb-2 pl-2 mt-4" style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.651356703653!2d-106.31989792437912!3d31.752716074108438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e744997c995a9f%3A0xf3a4b7a0cf662449!2s1506%20Lee%20Trevino%20Dr%20d1%2C%20El%20Paso%2C%20TX%2079936!5e0!3m2!1sen!2sus!4v1709592836426!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div id="map3"  class="map mb-2 pl-2 mt-4" style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.6246501900005!2d-106.1533413!3d31.5069995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e712ac3e7de54f%3A0x2ad5a4aa12dee97d!2s801%20Fabens%20Rd%20b%2C%20Fabens%2C%20TX%2079838!5e0!3m2!1sen!2sus!4v1709834797114!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+          </div>
+          <div id="map4"  class="map mb-2 pl-2 mt-4" style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.237684873644!2d-106.19747369999999!3d31.682069600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7402e3ca4459f%3A0x4a381ae37ee6d566!2s14010%20Horizon%20Blvd%2C%20Horizon%20City%2C%20TX%2079928!5e0!3m2!1sen!2sus!4v1709593029661!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+          </div>
+        </div>
+  </div> 
 
     <section class="location-boxes my-4 mx-4">
         <div class="row">

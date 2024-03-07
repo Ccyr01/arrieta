@@ -1,0 +1,8 @@
+@use "../custom" as *;
+.welcome{
+    max-width: 700px;
+    .lead{
+        font-weight: 500;
+        line-height: 1.9;
+    }
+}

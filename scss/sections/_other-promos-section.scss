@@ -129,6 +129,11 @@
     #coffee {
       background-image: url("../../images/coffee.jpg");
       background-position: center;
+      a{
+        border: solid 3px black;
+          background-color: $primary;
+          color: white;
+      }
     }
   }
 }

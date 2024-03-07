@@ -13,13 +13,20 @@ html {
     flex-direction: row;
     justify-content: center;
     background-color: $dark-blue;
-    @include media-breakpoint-down(lg){
+    .find-location{
+      width: 100%;
+      background-color: white;
+      color: black;
+      height: 100px;
+    }
+    @include media-breakpoint-down(md){
       flex-direction: column;
+      align-items: center;
     }
     .flex{
         background-color: $dark-blue;
         height: 100%;
-        padding-top:24px;
+        padding-top:40px;
         h4{
             margin-left: 20px;
             color: white;
@@ -29,7 +36,6 @@ html {
             color: white;
         }
         .scrollspy-example{
-          margin-top: 30px;
           scrollbar-width: thin;
             scrollbar-color: var(--thumbBG) var(--scrollbarBG);
           height:300px;
