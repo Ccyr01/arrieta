@@ -179,45 +179,85 @@
     </section>
 <!-- APPLY AND REFER -->
     <section class="other-promos-section">
-        <div class="three-div-parent">
-            <div class="promo" id="careers">
-                <h3 class="career">Career Opportunities</h3>
-                <div class="flex-apply">
-                    <a class="btn btn-md text-uppercase">Apply Here</a>
+        <div class="container mt-5">
+        <div class="modal" id="myModal" style="z-index: 10000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Auto Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="name" class="form-labe">Name</label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumber" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="year" class="form-labe">Year</label>
+                                <input type="number" id="year" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="make-model" class="form-labe">Make/Model</label>
+                                <input type="text" id="make-model" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="vin" class="form-labe">Vin#</label>
+                                <input type="number" id="vin" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="promo" id="quotes">
-                <h3>Personal Quote</h3>
-                    <div class="input-group mb-3 d-none">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroup-sizing-default">Zip-Code</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                      </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Select Product
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <li><a class="dropdown-item text-uppercase" href="#">automotive</a></li>
-                                  <li><a class="dropdown-item text-uppercase" href="#">home</a></li>
-                                  <li><a class="dropdown-item text-uppercase" href="#">life</a></li>
-                                  <li><a class="dropdown-item text-uppercase" href="#">commercial</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <a href="" class="btn text-uppercase">Get a quote</a>
-                        </div>
+        </div>
+            <div class="three-div-parent">
+                <div class="promo" id="careers">
+                    <h3 class="career">Career Opportunities</h3>
+                    <div class="flex-apply">
+                        <a class="btn btn-md text-uppercase" href="https://dashboard.idealtraits.com/Oscar-Arrieta-Agency/MTI2Mw==/careers">Apply Here</a>
                     </div>
-                  
-                   
-            </div>
-                <div class="promo" id="coffee"><h3>Win A Free Coffee</h3><div class="flex-apply">
-                    <a class="btn btn-md btn-primary text-uppercase">Refer a Friend</a>
+                </div>
+                <div class="promo" id="quotes">
+                    <!-- Popup is at the top of this section -->
+                    <h3>Personal Quote</h3>
+                        <div class="input-group mb-3 d-none">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Zip-Code</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select Product
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#" data-value="automotive">Automotive</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="home">Home</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="life">Life</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="commercial">Commercial</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <button id="getQuoteButton" class="btn btn-primary">Get a Quote</button> -->
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <a href="#" class="btn text-uppercase" data-bs-toggle="modal" data-bs-target="#myModal" id="getQuoteButton">Get a quote</a>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+                    <div class="promo" id="coffee"><h3>Win A Free Coffee</h3><div class="flex-apply">
+                        <a class="btn btn-md btn-primary text-uppercase">Refer a Friend</a>
+                    </div>
                 </div>
             </div>
         </div>

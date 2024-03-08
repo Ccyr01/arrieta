@@ -12960,6 +12960,11 @@ p.text-center {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 321px) {
+  .insurance-links-section .links-container h2 {
+    font-size: 12px;
+  }
+}
 .insurance-links-section .links-container .insurance-img {
   height: 300px;
   width: 300px;
@@ -13030,6 +13035,9 @@ p.text-center {
     margin: 10rem 0;
   }
 }
+.other-promos-section .container {
+  max-width: 2000px;
+}
 .other-promos-section .three-div-parent {
   margin-top: 20px;
   height: 400px;
@@ -13052,16 +13060,11 @@ p.text-center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 30px 10px;
 }
 .other-promos-section .three-div-parent .promo .row {
   display: flex;
-}
-@media (max-width: 991.98px) {
-  .other-promos-section .three-div-parent .promo .row {
-    flex-direction: column;
-  }
 }
 @media (max-width: 575.98px) {
   .other-promos-section .three-div-parent .promo .row {
@@ -13078,16 +13081,21 @@ p.text-center {
   border-radius: 10px 0px 0px 10px;
 }
 .other-promos-section .three-div-parent .promo h3 {
-  color: black;
+  color: white;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: linear-gradient(90deg, rgba(54, 69, 79, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
   border-radius: 10px;
   padding: 10px;
 }
 .other-promos-section .three-div-parent #careers {
   background-image: url("../../images/careerPic.jpg");
+}
+@media screen and (max-width: 767px) {
+  .other-promos-section .three-div-parent #careers {
+    background-position: 20px;
+  }
 }
 .other-promos-section .three-div-parent #careers .flex-apply {
   display: flex;
@@ -13110,9 +13118,11 @@ p.text-center {
   }
 }
 .other-promos-section .three-div-parent #quotes .btn {
+  min-width: 100px;
   background-color: white;
   color: #0033a0;
   font-size: clamp(12px, 1.5vw, 18px);
+  padding: 5px 5px;
 }
 .other-promos-section .three-div-parent #quotes #overlay2 {
   margin-top: -0.5rem;
@@ -13252,6 +13262,11 @@ p.text-center {
 .contact-services-claims .serving-container a {
   margin-bottom: 30px;
   border: #ed7766;
+}
+
+.modal-header {
+  background-color: #ed7766;
+  color: white;
 }
 
 #contact {
