@@ -135,10 +135,21 @@ const data = [
                             first: "Manuelita",
                             last: "Yanez",
                           },
-                          bio: "",
+                          bio: "Ms. Manuelita Yanez, known affectionately as Ms. Nelly, is a dedicated Riverside High School graduate and an integral part of the Riverside Community. With over 35 years of service at YISD, including 15 years serving Riverside, she embodies commitment and community spirit. Ms. Yanez has received multiple awards for her outstanding service, including the Service Excellence Award and the Superintendent’s Service Excellence Award. She’s renowned for her efforts in organizing turkey donations and campus-wide canned food drives, benefiting countless families in need. Additionally, her active involvement in the Riverside High School Alumni Association and sporting fundraisers highlights her dedication to supporting Riverside High School students through scholarships and athletic endeavors.",
                           picture: {
-                            thumbnail: "",
+                            thumbnail: "../images/mauelita.jpg",
                           },
                     },
+                    {
+                      name: {
+                          title: "Mr",
+                          first: "Captain Xavier",
+                          last: "T. Mosley",
+                        },
+                        bio: "Originally from Pennsylvania, Captain Mosley began his military journey with the Pennsylvania Army National Guard in 2010. After graduating from the University of Toledo, he transitioned to officer status, serving in various leadership roles. Currently, he serves as Troop Commander with the 6th Squadron, 1st Cavalry Regiment at Fort Bliss, Texas. Captain Mosley's remarkable intervention to save a fellow soldier's life during a critical situation in El Paso, highlights the importance of supporting one another in times of need. His decorated career includes prestigious awards like the Meritorious Service Medal and Army Commendation Medal. Thank you for your service and the impact you've made in our nation and our community!",
+                        picture: {
+                          thumbnail: "../images/xavier.jpg",
+                        },
+                  },
                     
 ];

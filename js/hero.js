@@ -35,6 +35,9 @@ function insertDomElements(imgSrc, firstName, lastName, bio) {
   const img = document.createElement("img");
   img.setAttribute("class", "draggable");
   img.setAttribute("src", imgSrc);
+  if(imgSrc == '../images/xavier.jpg'){
+    img.style.objectPosition = 'top';
+  }
   img.setAttribute("alt", "Profile Picture");
   img.addEventListener("click", () => {
     showImagePopup({ imgSrc, firstName, lastName, bio });

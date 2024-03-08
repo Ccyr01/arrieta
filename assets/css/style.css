@@ -12753,7 +12753,7 @@ p.text-center {
   transform: scaleX(0.9) scaleY(0.9);
 }
 .hometown-hero-body .heros .carousel .card:hover {
-  transform: scaleX(1.05) scaleY(1.05);
+  transform: scaleX(1.025) scaleY(1.025);
 }
 .hometown-hero-body .heros .card .img {
   background: #0E1941;
@@ -12997,11 +12997,12 @@ p.text-center {
 }
 .insurance-links-section .links-container .insurance-img:hover {
   cursor: pointer;
-  box-shadow: 2px 12px 10px 1px #0033a0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 51, 160, 0.7);
   transform: scale(1.1);
 }
 .insurance-links-section .links-container .insurance-img:hover h2 {
-  background-color: #ed7766;
+  background-color: #0033a0;
+  color: white;
 }
 .insurance-links-section .links-container .home {
   background-image: url("../../images/emergency-coverage.jpg");
@@ -13052,14 +13053,22 @@ p.text-center {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 30px;
+  padding: 30px 10px;
 }
 .other-promos-section .three-div-parent .promo .row {
   display: flex;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .other-promos-section .three-div-parent .promo .row {
     flex-direction: column;
+  }
+}
+@media (max-width: 575.98px) {
+  .other-promos-section .three-div-parent .promo .row {
+    flex-direction: row;
+  }
+  .other-promos-section .three-div-parent .promo .row .col-sm-6 {
+    width: 50%;
   }
 }
 .other-promos-section .three-div-parent .promo .row .dropdown {
@@ -13092,22 +13101,18 @@ p.text-center {
   background-color: #0033a0;
   color: white;
 }
-@media (max-width: 991.98px) {
-  .other-promos-section .three-div-parent #careers {
-    background: black;
-  }
-}
 .other-promos-section .three-div-parent #quotes {
   text-align: center;
 }
 @media (max-width: 767.98px) {
   .other-promos-section .three-div-parent #quotes {
-    width: 50%;
+    width: 80%;
   }
 }
 .other-promos-section .three-div-parent #quotes .btn {
   background-color: white;
   color: #0033a0;
+  font-size: clamp(12px, 1.5vw, 18px);
 }
 .other-promos-section .three-div-parent #quotes #overlay2 {
   margin-top: -0.5rem;

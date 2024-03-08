@@ -2,7 +2,7 @@
 
 .other-promos-section {
   margin: 5rem 0;
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     margin: 10rem 0;
   }
   .three-div-parent {
@@ -15,7 +15,6 @@
     align-items: center;
     @include media-breakpoint-down(md) {
       flex-direction: column;
-
     }
     .promo {
       background-size: cover;
@@ -26,15 +25,21 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 30px 30px;
+      padding: 30px 10px;
 
-      .row{
+      .row {
         display: flex;
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(lg) {
           flex-direction: column;
         }
-        
-        .dropdown{
+        @include media-breakpoint-down(sm) {
+          flex-direction: row;
+          .col-sm-6 {
+            width: 50%;
+          }
+        }
+
+        .dropdown {
           margin-bottom: 1.5rem;
         }
       }
@@ -72,19 +77,16 @@
           color: white;
         }
       }
-      @include media-breakpoint-down(lg){
-        background: black;
-      }
     }
     #quotes {
       text-align: center;
-      @include media-breakpoint-down(md){
-        width: 50%;
+      @include media-breakpoint-down(md) {
+        width: 80%;
       }
       .btn {
         background-color: white;
         color: $primary;
-        
+        font-size: clamp(12px, 1.5vw, 18px);
       }
       #overlay2 {
         // background-color: black;
@@ -98,14 +100,14 @@
         text-align: center;
         // background-color: rgba(255, 255, 255, 0.3);
         border-radius: 5px;
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(md) {
           width: 50%;
         }
         .input-group {
           width: 15rem;
           display: flex;
           flex-direction: row;
-          @include media-breakpoint-down(lg){
+          @include media-breakpoint-down(lg) {
             flex-direction: column;
           }
         }
@@ -129,10 +131,10 @@
     #coffee {
       background-image: url("../../images/coffee.jpg");
       background-position: center;
-      a{
+      a {
         border: solid 3px black;
-          background-color: $primary;
-          color: white;
+        background-color: $primary;
+        color: white;
       }
     }
   }
@@ -163,9 +165,9 @@
     }
   }
   //Serving el paso section---------------------------
-  .contact-wrapper{
+  .contact-wrapper {
     display: flex;
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
       flex-direction: column;
     }
   }
