@@ -45,9 +45,9 @@ quoteButton.addEventListener('click', function() {
 });
 }
 
-//THis is the click event listener for the hero nomination
-if(heroButton){
-  heroButton.addEventListener('click', function() {
-  console.log('click logged')
-});
-}
+// //THis is the click event listener for the hero nomination
+// if(heroButton){
+//   heroButton.addEventListener('click', function() {
+//   console.log('click logged')
+// });
+// }

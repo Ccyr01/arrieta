@@ -12634,6 +12634,7 @@ p.text-center {
 }
 .hometown-hero-body .title h1 {
   font-weight: 800;
+  font-size: 52px;
 }
 .hometown-hero-body .title {
   display: flex;
@@ -12846,6 +12847,12 @@ p.text-center {
   height: 200px;
   background-color: #0033a0; /* For browsers that do not support gradients */
   background-image: linear-gradient(183deg, white 0%, white 49%, #0033a0 50%, #0033a0 100%);
+}
+.hometown-hero-body .modal-body form h2 {
+  text-align: center;
+}
+.hometown-hero-body .modal-body form div label {
+  text-align: start !important;
 }
 
 .gameday-body .gameday-section {
