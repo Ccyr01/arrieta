@@ -18,7 +18,7 @@ closeButton.addEventListener("click", () => {
 
 let typeOfInsurance = '';
 
-document.querySelectorAll('.dropdown-item').forEach(item => {
+document.querySelectorAll('.dropdown-item2').forEach(item => {
   item.addEventListener('click', function(e) {
       e.preventDefault();
       typeOfInsurance = this.getAttribute('data-value'); // Update the typeOfInsurance variable
