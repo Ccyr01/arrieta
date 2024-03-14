@@ -2,9 +2,10 @@ let hamburger = document.querySelectorAll(".hamburger");
 
 let closeButton = document.querySelector("#close");
 let sidebar = document.querySelector("#sidebar-menu");
+let quoteButton = document.querySelector('#getQuoteButton')
+let heroButton = document.querySelector('#nominate-a-hero-button')
 
 for (let h of hamburger) {
-  console.log(h);
   h.addEventListener("click", () => {
     sidebar.classList.add("show");
     console.log('here in contact')
@@ -32,7 +33,9 @@ document.querySelectorAll('.dropdown-item2').forEach(item => {
 
 
 // Add click event listener to the "Get a Quote" button
-document.getElementById('getQuoteButton').addEventListener('click', function() {
+if(quoteButton){
+quoteButton.addEventListener('click', function() {
+    console.log('click logged')
     if (typeOfInsurance) {
         // Here you can handle the product selection (e.g., showing a modal related to the selected product)
         console.log('Selected product:', typeOfInsurance); 
@@ -40,3 +43,11 @@ document.getElementById('getQuoteButton').addEventListener('click', function() {
         alert('Please select a product first.');
     }
 });
+}
+
+//THis is the click event listener for the hero nomination
+if(heroButton){
+  heroButton.addEventListener('click', function() {
+  console.log('click logged')
+});
+}

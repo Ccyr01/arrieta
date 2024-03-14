@@ -155,19 +155,54 @@
         <p class="nomination-paragraph fs-5 py-3">
             Nominate the special person in your life and tell us why you believe they should be the hometown hero at the next UTEP game.
         </p>
-        <a href="" class="btn btn-primary btn-md text-uppercase">Click here</a>
+        <a href="" class="btn btn-primary btn-md text-uppercase" id="nominate-a-hero-button" data-bs-toggle="modal">Click here</a>
     </div>
     </section>
-    
+
+    <!-- Modal Layout-->
+    <div class="modal" id="myModalHome" style="z-index: 10000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Home Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://formsubmit.co/contact@oscararrietaagency.com" method="POST">
+                            <div class="mb-3">
+                                <label for="nameHome" class="form-label">Name</label>
+                                <input type="text" id="nameHome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumberHome" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumberHome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="roof-type" class="form-label">Roof Type</label>
+                                <input type="text" id="roof-type" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="roof-age" class="form-label">Roof Age</label>
+                                <input type="text" id="roof-age" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mortgage" class="form-label">Mortgage</label>
+                                <input type="text" id="mortgage" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="title-status" class="form-label">Title Status</label>
+                                <input type="text" id="title-status" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div class="slanted"></div>
     <!-- Footer -->
-    <div id="modal">
-        <div>
-          lorem ipusom temporary
-        </div> 
-
- </div>
+    
 <footer class = "footer">
     <div class="oscar-title-footer">
         <h2 class="">Oscar Arrieta Agency</h2>
