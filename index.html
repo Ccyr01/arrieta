@@ -146,6 +146,7 @@
             
         </div>
     </section>
+<!--Modals!!!!!!!!!!!!!!!!-->
 <!--INSURANCE LINKS-->
     <section class="insurance-links-section">
         <div class="links-container mt-3">
@@ -157,21 +158,21 @@
             </a>
             <a href="autoInsurance/index.html">
                 <div class="insurance-img automotive">
-                        <!-- <img src="../../images/emergency-coverage.jpg" alt=""> -->
+                        
                         <h2 class="text-uppercase">auto</h2>
                 </div>
             </a>
             <a href="lifeInsurance/index.html">
                 <div class="insurance-img life">
                     <div class="">
-                        <!-- <img src="../../images/emergency-coverage.jpg" alt=""> -->
+                        
                         <h2 class="text-uppercase">life</h2>
                     </div>
                 </div>
             </a>
             <a href="commercialInsurance/index.html">
                 <div class="insurance-img commercial">
-                        <!-- <img src="../../images/emergency-coverage.jpg" alt=""> -->
+                        
                         <h2 class="text-uppercase">commercial</h2>
                 </div>
             </a>
@@ -180,42 +181,121 @@
 <!-- APPLY AND REFER -->
     <section class="other-promos-section">
         <div class="container mt-5">
-        <div class="modal" id="myModal" style="z-index: 10000;">
+        <!-- Automotive Insurance Form -->
+        <div class="modal" id="myModalAutomotive" style="z-index: 10000;">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Auto Quote</h5>
+                        <h5 class="modal-title">Automotive Quote</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <form action="">
                             <div class="mb-3">
-                                <label for="name" class="form-labe">Name</label>
-                                <input type="text" id="name" class="form-control">
+                                <label for="nameAuto" class="form-label">Name</label>
+                                <input type="text" id="nameAuto" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label for="phoneNumber" class="form-label">Phone Number</label>
-                                <input type="tel" id="phoneNumber" class="form-control">
+                                <label for="phoneNumberAuto" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumberAuto" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label for="year" class="form-labe">Year</label>
-                                <input type="number" id="year" class="form-control">
+                                <label for="yearAuto" class="form-label">Year</label>
+                                <input type="number" id="yearAuto" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label for="make-model" class="form-labe">Make/Model</label>
-                                <input type="text" id="make-model" class="form-control">
+                                <label for="makeModelAuto" class="form-label">Make/Model</label>
+                                <input type="text" id="makeModelAuto" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label for="vin" class="form-labe">Vin#</label>
-                                <input type="number" id="vin" class="form-control">
+                                <label for="vinAuto" class="form-label">Vin#</label>
+                                <input type="number" id="vinAuto" class="form-control">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
-                            
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Home Insurance Form -->
+        <div class="modal" id="myModalHome" style="z-index: 10000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Home Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="nameHome" class="form-label">Name</label>
+                                <input type="text" id="nameHome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumberHome" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumberHome" class="form-control">
+                            </div>
+                            <!-- Add additional fields relevant to home insurance here -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Commercial Insurance Form -->
+        <div class="modal" id="myModalCommercial" style="z-index: 10000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Commercial Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="nameCommercial" class="form-label">Name</label>
+                                <input type="text" id="nameCommercial" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumberCommercial" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumberCommercial" class="form-control">
+                            </div>
+                            <!-- Add additional fields relevant to commercial insurance here -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Life Insurance Form -->
+        <div class="modal" id="myModalLife" style="z-index: 10000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Life Quote</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="nameLife" class="form-label">Name</label>
+                                <input type="text" id="nameLife" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumberLife" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumberLife" class="form-control">
+                            </div>
+                            <!-- Add additional fields relevant to life insurance here -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <div class="three-div-parent">
                 <div class="promo" id="careers">
                     <h3 class="career">Career Opportunities</h3>
@@ -249,8 +329,9 @@
                             <!-- <button id="getQuoteButton" class="btn btn-primary">Get a Quote</button> -->
                             
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <a href="#" class="btn text-uppercase" data-bs-toggle="modal" data-bs-target="#myModal" id="getQuoteButton">Get a quote</a>
+                                <a href="#" class="btn text-uppercase" data-bs-toggle="modal" id="getQuoteButton">Get a quote</a>
                             </div>
+                            
                         </div>
                     
                     
