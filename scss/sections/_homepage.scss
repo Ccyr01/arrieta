@@ -232,15 +232,18 @@
 
   //SLANT---------------------------------
   .slanted {
-    height: 200px;
+    height: 140px;
     background-color: $primary; /* For browsers that do not support gradients */
     background-image: linear-gradient(
       185deg,
       white 0%,
       white 49%,
       $primary 50%,
-      $primary 100%
+      $primary 100% 
     );
+    @media screen and (min-width:1500px) {
+      height: 200px;
+    }
     // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   }
   //google-review-------------------------
@@ -251,12 +254,13 @@
     align-items: center;
     .anchor-container {
       display: flex;
-      height: 300px;
+      height: 100px;
       align-items: center;
       div {
         width: 200px;
       }
       #google-review-img {
+        margin-top: 3rem;
         width: 100%;
       }
     }

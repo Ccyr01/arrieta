@@ -12178,9 +12178,14 @@ nav .container {
   }
 }
 .home .slanted {
-  height: 200px;
+  height: 140px;
   background-color: #0033a0; /* For browsers that do not support gradients */
   background-image: linear-gradient(185deg, white 0%, white 49%, #0033a0 50%, #0033a0 100%);
+}
+@media screen and (min-width: 1500px) {
+  .home .slanted {
+    height: 200px;
+  }
 }
 .home .google-review {
   background-color: white;
@@ -12190,13 +12195,14 @@ nav .container {
 }
 .home .google-review .anchor-container {
   display: flex;
-  height: 300px;
+  height: 100px;
   align-items: center;
 }
 .home .google-review .anchor-container div {
   width: 200px;
 }
 .home .google-review .anchor-container #google-review-img {
+  margin-top: 3rem;
   width: 100%;
 }
 
@@ -12954,6 +12960,7 @@ p.text-center {
   width: calc(100% - 40px);
   font-weight: bolder;
   color: black;
+  letter-spacing: 2px;
 }
 @media screen and (max-width: 1277px) {
   .insurance-links-section .links-container h2 {
@@ -13067,7 +13074,7 @@ p.text-center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 30px 10px;
 }
 .other-promos-section .three-div-parent .promo .row {
@@ -13081,8 +13088,15 @@ p.text-center {
     width: 50%;
   }
 }
-.other-promos-section .three-div-parent .promo .row .dropdown {
-  margin-bottom: 1.5rem;
+.other-promos-section .three-div-parent .promo .row .dropdown .dropdown-menu {
+  background-color: white;
+}
+.other-promos-section .three-div-parent .promo .row .dropdown .dropdown-menu .dropdown-item2 {
+  color: #0E1941;
+  text-decoration: none;
+}
+.other-promos-section .three-div-parent .promo .row .dropdown .dropdown-menu .dropdown-item2:hover {
+  text-decoration: underline;
 }
 .other-promos-section .three-div-parent .promo .input-group-text {
   border-radius: 10px 0px 0px 10px;
@@ -13092,7 +13106,7 @@ p.text-center {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: linear-gradient(90deg, rgba(54, 69, 79, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(90deg, rgba(54, 69, 79, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
   border-radius: 10px;
   padding: 10px;
 }
@@ -13126,8 +13140,9 @@ p.text-center {
 }
 .other-promos-section .three-div-parent #quotes .btn {
   min-width: 100px;
-  background-color: white;
-  color: #0033a0;
+  background-color: #0033a0;
+  border: solid 3px black;
+  color: white;
   font-size: clamp(12px, 1.5vw, 18px);
   padding: 5px 5px;
 }
