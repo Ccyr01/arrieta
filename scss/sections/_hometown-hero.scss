@@ -8,7 +8,7 @@
     color: $secondary;
     h1 {
       font-weight: 800;
-      font-size:52px;
+      font-size: 52px;
     }
   }
   //SLANT---------------------------------
@@ -245,6 +245,9 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       max-width: 600px;
     }
+    form {
+      color: #0033a0;
+    }
   }
   //SLANT---------------------------------
   .slanted {
@@ -259,17 +262,15 @@
     );
     // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   }
-  .modal-body{
-    form{
-      h2{
+  .modal-body {
+    form {
+      h2 {
         text-align: center;
       }
-      div{
-        label{
-          text-align: start !important;
+      div {
+        label {
         }
       }
-     
     }
   }
 }
