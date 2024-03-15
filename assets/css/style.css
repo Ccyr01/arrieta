@@ -13019,8 +13019,9 @@ p.text-center {
   background-size: cover;
 }
 .insurance-links-section .links-container .automotive {
-  background-image: url("../../images/autoGirl.jpg");
+  background-image: url("../../images/AUTO.jpg");
   background-size: cover;
+  background-position: right;
 }
 .insurance-links-section .links-container .life {
   background-image: url("../../images/lifeInsurance.jpg");
@@ -13058,6 +13059,7 @@ p.text-center {
   }
 }
 .other-promos-section .three-div-parent .promo {
+  background-image: url("../../images/PersonalQuote.jpg");
   background-size: cover;
   background-position: bottom center;
   height: 100%;
