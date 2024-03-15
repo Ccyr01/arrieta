@@ -84,7 +84,7 @@
     #quotes {
       text-align: center;
       @include media-breakpoint-down(md) {
-        width: 80%;
+        background-position: center;
       }
       .btn {
         min-width: 100px;

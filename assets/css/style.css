@@ -13121,7 +13121,7 @@ p.text-center {
 }
 @media (max-width: 767.98px) {
   .other-promos-section .three-div-parent #quotes {
-    width: 80%;
+    background-position: center;
   }
 }
 .other-promos-section .three-div-parent #quotes .btn {
