@@ -165,28 +165,30 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                         <div class="modal-body">
-                            <form action="https://formsubmit.co/contact@oscararrietaagency.com" method="POST">
+                            <form action="https://formsubmit.co/contact@oscararrietaagency.com" method="POST" class="row g-3">
+                                <input type="hidden" name="Hometown Hero Page" value="Nominee">
+                                <h2 class="text-secondary text-uppercase fs-1 fw-bold">Get a Free Quote</h2>
                                 <h2>Your Info</h2>
-                                <div class="mb-3 d-flex flex-column">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" id="name" class="form-control">
+                                <div class="col-md-12">
+                                  <label for="name" class="form-label text-dark">Name</label>
+                                  <input type="text" name="name" class="form-control" id="name">
                                 </div>
-                              
-                                <div class="mb-3 d-flex flex-column">
-                                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                                    <input type="tel" id="phoneNumber" class="form-control">
+                                <div class="col-12">
+                                    <label for="phone" class="form-label text-dark">Phone</label>
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="(915) 123-4567">
                                 </div>
-                                <h2>Nominee's Info</h2>
-                                <div class="mb-3 d-flex flex-column">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" id="name" class="form-control">
+                                <h2>Nominee Info</h2>
+                                <div class="col-md-12">
+                                    <label for="name" class="form-label text-dark">name</label>
+                                    <input type="text" name="nominee name" class="form-control" id="nom-name">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="phone" class="form-label text-dark">Phone</label>
+                                      <input type="tel" name="nominee phone" class="form-control" id="nom-phone" placeholder="(915) 123-4567">
+                                  </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-secondary mb-3">Submit</button>
                                 </div>
-                                <div class="mb-3 d-flex flex-column">
-                                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                                    <input type="tel" id="phoneNumber" class="form-control">
-                                </div>
-                                
-                                <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
                 </div>

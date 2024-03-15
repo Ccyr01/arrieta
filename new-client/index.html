@@ -131,30 +131,31 @@
           <div class="row justify-content-center my-5">
             <div class="col-lg-6">
               
-              <form action="https://formsubmit.co/contact@oscararrietaagency.com" method="POST">
+              <form action="https://formsubmit.co/ccyrius01@gmail.com" method="POST">
+                <input type="hidden" name="New Client Page" value="Welcome New Client">
                 <label for="name" class="form-label">Name:</label>
                 <div class="mb-4 input-group">
                   <span class="input-group-text">
                     <i class="bi bi-person-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                  <input type="text" name="name" id="name" class="form-control" placeholder="e.g. Mario" />
                 </div>
                 <label for="name" class="form-label">Phone Number:</label>
                 <div class="mb-4 input-group">
                   <span class="input-group-text">
                     <i class="bi bi-person-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="name" class="form-control" placeholder="e.g. (915) 123-4567" />
+                  <input type="text" class="phone" id="name" class="form-control" placeholder="e.g. (915) 123-4567" />
                 </div>
                 <label for="email" class="form-label">Email address:</label>
                 <div class="input-group mb-4">
                   <span class="input-group-text">
                     <i class="bi bi-envelope-fill text-secondary"></i>
                   </span>
-                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                  <input type="text" name="email" id="email" class="form-control" placeholder="e.g. mario@example.com" />
                 </div>
                 <label for="email" class="form-label">Which office did you visit?</label>
-                <select class="form-select" aria-label="Disabled select example">
+                <select class="form-select"  name="location" aria-label="Disabled select example">
                     <option selected>Choose</option>
                     <option value="1">10110 Montwood Dr. Ste. A</option>
                     <option value="2">1506 N Lee Trevino Dr. Ste. D-1</option>
@@ -164,13 +165,13 @@
                 </select>
                 <label for="flexRadioDefault1" class="mt-4">Did they print out your Insurance ID cards?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="did they print out insurance id cards" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="did they print out insurance id cards" id="flexRadioDefault2" checked>
                     <label class="form-check-label" for="flexRadioDefault2">
                       No
                     </label>
@@ -179,7 +180,7 @@
                 
                 
                 <div class="mb-4 mt-5 form-floating">
-                  <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                  <textarea class="form-control" name="any additional questions?" id="query" style="height: 140px" placeholder="query"></textarea>
                   <label for="query">Any additional questions/comments?</label>
                 </div>
                 <div class="mb-4 text-center">
