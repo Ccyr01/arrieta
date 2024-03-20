@@ -12064,7 +12064,6 @@ nav .container {
   margin-top: 10px;
   align-items: center;
   border: solid 3px #ed7766;
-  color: #ed7766;
 }
 .home .intro-section #overlay2 a:hover {
   color: #0E1941;
@@ -12376,6 +12375,7 @@ nav .container {
 }
 .home-insurance .home-insurance-section .home-insurance-div .home-insurance-info p {
   color: white;
+  text-align: center;
 }
 .home-insurance .home-insurance-section .home-insurance-div .home-insurance-info a {
   align-items: center;
@@ -13022,7 +13022,7 @@ p.text-center {
   color: white;
 }
 .insurance-links-section .links-container .home {
-  background-image: url("../../images/emergency-coverage.jpg");
+  background-image: url("../../images/Home_texas_70.jpg");
   background-size: cover;
 }
 .insurance-links-section .links-container .automotive {

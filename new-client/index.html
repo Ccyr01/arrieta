@@ -9,65 +9,80 @@
 </head>
 <body class="gameday-body">
 <!--Sidebar-->
-    <section class="sidebar-menu hidden" id="sidebar-menu">
-        <div class="container-fluid">
-            <div class="row flex-nowrap">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" id="menu-col">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                        <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                            <span class="fs-5 d-none d-sm-inline">Menu</span>
-                        </a>
-                        <ul class="nav nav-pills flex-column mt-5 mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                            <li class="close-button"><i class="fa-regular fa-circle-xmark" id="close"></i></li>
-                            <li class="nav-item">
-                                <a href="../index.html" class="nav-link align-middle px-0">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-speedometer2"></i> > Insurance Products </a>
-                                <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="../homeInsurance/index.html" class="nav-link px-0"> Home Insurance </a>
-                                    </li>
-                                    <li>
-                                        <a href="../autoInsurance/index.html" class="nav-link px-0"> Auto Insurance
-                                    <li>
-                                        <a href="../lifeInsurance/index.html" class="nav-link px-0"> Life Insurance</a>
-                                    </li>
-                                    <li>
-                                        <a href="../commercialInsurance/index.html" class="nav-link px-0"> Commercial Insurance</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-table"></i>Referral</a>
-                            </li>
-                            <li>
-                                <a href="../contact/index.html" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Contact</span> </a>
-                              </li>
-                            <li>
-                                <a href="../hometownHero/index.html" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> Hometown Hero </a>
-                            </li>
-                            <li>
-                                <a href="../utep/index.html" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> Game Day Giveaways </a>
-                            </li>
-                        </ul>
-                        <hr>
-                        
-                    </div>
-                </div>
-                <div class="col py-3">
-                    Content area...
+<section class="sidebar-menu hidden" id="sidebar-menu">
+    <div class="container-fluid pt-5">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" id="menu-col">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline" style="margin-top:100px;">Menu</span>
+                        <i class="fa-regular fa-circle-xmark" id="close"></i>
+                    </a>
+                    <ul class="nav nav-pills flex-column mt-5 mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link align-middle px-0">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> Insurance Products 
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li>
+                                    <a href="../homeInsurance/index.html" class="nav-link px-0"> Home Insurance </a>
+                                </li>
+                                <li>
+                                    <a href="../autoInsurance/index.html" class="nav-link px-0"> Auto Insurance </a>
+                                </li>
+                                <li>
+                                    <a href="../lifeInsurance/index.html" class="nav-link px-0"> Life Insurance </a>
+                                </li>
+                                <li>
+                                    <a href="../commercialInsurance/index.html" class="nav-link px-0"> Commercial Insurance </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-tabfle"></i> Referral 
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li>
+                                    <a href="../referral/index.html" class="nav-link px-0"> Refer Somebody </a>
+                                </li>
+                                <li>
+                                    <a href="../new-client/index.html" class="nav-link px-0"> New Client </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../contact/index.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Contact</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../hometownHero/index.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> Hometown Hero 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../utep/index.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> Game Day Giveaways 
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <hr>
+                    
                 </div>
             </div>
+            <div class="col py-3">
+                Content area...
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
