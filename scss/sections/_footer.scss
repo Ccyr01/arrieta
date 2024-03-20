@@ -50,6 +50,9 @@
             }        
           }
       }
+      .contact-us-footer a:hover{
+        color: $secondary;
+      }
       .contact-us-footer:not(:last-child),
       .services-footer:not(:last-child) {
           border-right: 1px solid white;

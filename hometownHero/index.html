@@ -171,7 +171,7 @@
         <p class="nomination-paragraph fs-5 py-3">
             Nominate the special person in your life and tell us why you believe they should be the hometown hero at the next UTEP game.
         </p>
-        <button type ="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Contact Us</button>
+        <button type ="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Nominate</button>
         <div class="modal" id="myModal2" style="z-index: 10000;">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -182,7 +182,7 @@
                         <div class="modal-body">
                             <form action="https://formsubmit.co/contact@oscararrietaagency.com" method="POST" class="row g-3">
                                 <input type="hidden" name="Hometown Hero Page" value="Nominee">
-                                <h2 class="text-secondary text-uppercase fs-1 fw-bold">Get a Free Quote</h2>
+                                
                                 <h2>Your Info</h2>
                                 <div class="col-md-12">
                                   <label for="name" class="form-label text-dark">Name</label>
@@ -194,13 +194,26 @@
                                 </div>
                                 <h2>Nominee Info</h2>
                                 <div class="col-md-12">
-                                    <label for="name" class="form-label text-dark">name</label>
+                                    <label for="name" class="form-label text-dark">
+                                        Name</label>
                                     <input type="text" name="nominee name" class="form-control" id="nom-name">
                                   </div>
                                   <div class="col-12">
                                       <label for="phone" class="form-label text-dark">Phone</label>
                                       <input type="tel" name="nominee phone" class="form-control" id="nom-phone" placeholder="(915) 123-4567">
                                   </div>
+                                  <div class="col-12">
+                                    <label for="email" class="form-label text-dark">Email</label>
+                                    <input type="tel" name="nominee email" class="form-control" id="nom-phone" placeholder="abc@gmail.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="story" class="form-label text-dark">Nominee's Story</label>
+                                    <textarea id="story" name="story" rows="6" cols="50" placeholder="Tell us about your nominee and what is special about his/her work"></textarea><br>
+                                </div>
+                                <div class="col-12">
+                                    <label for="story" class="form-label text-dark">Nominee's Links</label>
+                                    <textarea id="links" name="links" rows="6" cols="50" placeholder="Are there any links you would like to share? (Articles, Website, Social Media)"></textarea><br>
+                                </div>
                                 <div class="col-12">
                                   <button type="submit" class="btn btn-secondary mb-3">Submit</button>
                                 </div>
@@ -215,8 +228,11 @@
     </section>
 
     <!-- Modal Layout-->
-    
-    
+    <div id="modal">
+        <div>
+            
+        </div>
+    </div>
 
     <div class="slanted"></div>
     <!-- Footer -->
@@ -229,10 +245,9 @@
         <div class="contact-us-footer">
             <h4 >Contact Us</h4>
             <p>Oscar Arrieta Agency<br>
-            (915) 400-6000<br>
-            10110 Montwood Dr, Ste A<br>
-            El Paso, TX 79925<br></p>
-            <p>TEAM MEMBERS ONLY FORMS</p>
+            <a href="tel:9154006000">(915) 400-6000</a><br>
+            <a href="../contact/index.html">10110 Montwood Dr, Ste A<br>
+                El Paso, TX 79925</a><br></p>
         </div>
         <div class="services-footer">
             <h4 >Services</h4>

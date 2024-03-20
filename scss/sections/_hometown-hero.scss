@@ -40,6 +40,9 @@
   }
   .nominations {
     padding-top: 5px;
+    .btn-primary:hover{
+      background-color: $secondary;
+    }
 
     .nominations-div {
       display: flex;
@@ -264,6 +267,7 @@
   }
   .modal-body {
     form {
+      text-align: left;
       h2 {
         text-align: center;
       }

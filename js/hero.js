@@ -41,6 +41,7 @@ function insertDomElements(imgSrc, firstName, lastName, bio) {
   img.setAttribute("alt", "Profile Picture");
   img.addEventListener("click", () => {
     showImagePopup({ imgSrc, firstName, lastName, bio });
+    console.log('clicked');
   });
   div.appendChild(img);
   const h2 = document.createElement("h2");
