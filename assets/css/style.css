@@ -11885,9 +11885,17 @@ textarea.form-control-lg {
   margin: 0 15px 0;
   height: 70px;
 }
+.navbar .container {
+  flex-wrap: nowrap;
+}
 
 .navbar-brand img {
   height: 50px;
+}
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    height: 30px;
+  }
 }
 
 .navbar-nav .dropdown-menu {
@@ -11895,7 +11903,7 @@ textarea.form-control-lg {
 }
 
 .navbar .navbar-toggler-icon {
-  background-color: #ed7766;
+  background-color: black;
 }
 
 @media (max-width: 575.98px) {
@@ -11956,6 +11964,9 @@ nav .container {
 .home {
   color: #0033a0;
   background-color: white;
+}
+.home .el-paso {
+  white-space: nowrap;
 }
 .home .intro-section {
   padding-top: 20px;
@@ -12063,11 +12074,11 @@ nav .container {
 .home .intro-section #overlay2 a {
   margin-top: 10px;
   align-items: center;
-  border: solid 3px #ed7766;
+  background-color: #ed7766;
 }
 .home .intro-section #overlay2 a:hover {
-  color: #0E1941;
-  background-color: #ed7766;
+  color: #fff;
+  background-color: #0E1941;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 .home #quote {
@@ -12422,13 +12433,15 @@ nav .container {
   position: fixed;
   top: 0;
   right: -120%;
-  width: 300px;
   height: 100%;
   background: var(--clr-grey-10);
   z-index: 200;
   transition: all 1s ease-out;
   display: flex;
   flex-direction: column;
+}
+.sidebar-menu .container-fluid {
+  background-color: black;
 }
 .sidebar-menu a {
   color: white;
@@ -12457,8 +12470,12 @@ nav .container {
   justify-content: space-between;
   align-items: center;
 }
-.sidebar-menu ul li {
-  width: 80%;
+.sidebar-menu ul li a {
+  color: #ed7766;
+}
+.sidebar-menu ul li a:hover {
+  color: white !important;
+  text-decoration: underline;
 }
 .sidebar-menu ul #close-button {
   text-align: right;
@@ -12467,6 +12484,14 @@ nav .container {
 .sidebar-menu.show {
   margin-top: 60px;
   right: 0;
+}
+
+.sidebar-menu ul li a:hover {
+  color: white;
+}
+
+.nav-link:not(:hover) {
+  color: #ed7766;
 }
 
 .free-quote-form-section {
@@ -13254,6 +13279,9 @@ p.text-center {
 }
 .contact-services-claims .contact-wrapper .filing-a-claim-div h2 {
   color: #45bce5;
+}
+.contact-services-claims .contact-wrapper .filing-a-claim-div a:hover {
+  text-decoration: underline;
 }
 .contact-services-claims .contact-wrapper {
   display: flex;

@@ -1,7 +1,7 @@
 let hamburger = document.querySelectorAll(".hamburger");
 
 let closeButton = document.querySelector("#close");
-let sidebar = document.querySelector("#sidebar-menu");
+let sidebar = document.querySelector(".sidebar-menu");
 let quoteButton = document.querySelector('#getQuoteButton')
 let heroButton = document.querySelector('#nominate-a-hero-button')
 

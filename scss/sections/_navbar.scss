@@ -24,15 +24,21 @@
   border-radius: 10px;
   margin: 0 15px 0;
   height: 70px;
+  .container{
+    flex-wrap: nowrap;
+  }
 }
 .navbar-brand img {
   height: 50px;
+  @include media-breakpoint-down(sm){
+    height: 30px;
+  }
 }
 .navbar-nav .dropdown-menu {
   background-color: white;
 }
 .navbar .navbar-toggler-icon {
-  background-color: $secondary;
+  background-color: black;
 }
 .minimized-menu {
   // background-color: black;

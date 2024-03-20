@@ -174,9 +174,13 @@
         color: $header-color;
         text-decoration: none;
       }
+      
       h2 {
         color: $header-color;
       }
+    }
+    .filing-a-claim-div a:hover {
+      text-decoration: underline;
     }
   }
   //Serving el paso section---------------------------

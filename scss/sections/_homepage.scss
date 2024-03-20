@@ -3,6 +3,10 @@
   color: $primary;
   background-color: white;
 
+  .el-paso{
+    white-space: nowrap;
+  }
+
   //New Intro
   .intro-section {
     padding-top: 20px;
@@ -104,11 +108,11 @@
       a {
         margin-top: 10px;
         align-items: center;
-        border: solid 3px $secondary;
+        background-color:  $secondary;
       }
       a:hover {
-        color: $dark-blue;
-        background-color: $secondary;
+        color: $white;
+        background-color: $dark-blue;
         transition: background-color 0.9s ease, color 0.9s ease;
       }
     }
