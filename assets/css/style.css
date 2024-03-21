@@ -11889,12 +11889,23 @@ textarea.form-control-lg {
   flex-wrap: nowrap;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    margin-right: 0 !important;
+  }
+}
+
 .navbar-brand img {
   height: 50px;
 }
-@media (max-width: 575.98px) {
+@media screen and (max-width: 400px) {
   .navbar-brand img {
-    height: 30px;
+    height: 34px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .navbar-brand img {
+    height: 27px;
   }
 }
 
@@ -11906,6 +11917,9 @@ textarea.form-control-lg {
   background-color: black;
 }
 
+.minimized-menu {
+  padding: 0 !important;
+}
 @media (max-width: 575.98px) {
   .minimized-menu {
     background-color: white;
@@ -11969,7 +11983,7 @@ nav .container {
   white-space: nowrap;
 }
 .home .intro-section {
-  padding-top: 20px;
+  padding-top: 10px;
   height: 650px;
   background-color: white;
 }
@@ -12056,11 +12070,18 @@ nav .container {
   }
 }
 .home .intro-section #overlay2 .text-background {
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
 }
 @media screen and (max-width: 664px) {
   .home .intro-section #overlay2 .text-background {
     width: 100%;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .home .intro-section #overlay2 .text-background {
+    padding: 0 20px 20px 35px;
   }
 }
 .home .intro-section #overlay2 h2 {
