@@ -12545,6 +12545,9 @@ nav .container {
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img img {
   width: 100%;
 }
+.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div #life-insurance-picture {
+  max-height: 800px;
+}
 
 .sidebar-menu {
   position: fixed;
