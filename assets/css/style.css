@@ -12524,24 +12524,18 @@ nav .container {
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
-  max-height: 500px;
 }
 @media (max-width: 767.98px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div {
     flex-direction: column;
   }
 }
-.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage {
-  width: 48%;
-}
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage h3 {
   color: #45bce5;
   font-weight: 800;
 }
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
-  width: 48%;
-  max-width: 1200px;
-  text-align: end;
+  width: 1200px;
 }
 @media (max-width: 767.98px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
@@ -12549,8 +12543,7 @@ nav .container {
   }
 }
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img img {
-  height: 100%;
-  overflow: hidden;
+  width: 100%;
 }
 
 .sidebar-menu {

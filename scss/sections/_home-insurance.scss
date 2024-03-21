@@ -136,12 +136,11 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 5rem;
-                max-height: 500px;
                 @include media-breakpoint-down(md){
                     flex-direction: column;
                 }
                 .emergency-coverage{
-                    width: 48%;
+                    // width: 48%;
                     h3{
                         color: $header-color;
                         font-weight: 800;
@@ -149,16 +148,14 @@
                     
                 } 
                 .emergency-coverage-img{
-                    width:48%;
-                    max-width: 1200px;
-                    text-align: end;
+                    // width:48%;
+                    width: 1200px;
                     @include media-breakpoint-down(md){
                         width: 100%
                     }
                 }
                 .emergency-coverage-img img{
-                    height: 100%;
-                    overflow: hidden;
+                    width: 100%;
                 }
             }
         }
