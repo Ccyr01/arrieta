@@ -3,10 +3,84 @@
 .home-insurance{
     .home-insurance-section{
         background-color: white;
-        margin-top:200px;
+        margin-top:100px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        .top-image-container-commercial{
+            display: flex;
+            width: 90vw;
+            height:300px;
+            .image-box{
+                width: 100%;
+                height: 100%;
+                background-image: url("../../images/Commercial.jpg");
+                background-position:center;
+                background-size: cover;
+                @include media-breakpoint-up(xl){
+                    background-position:  50% 30%;
+                }
+            }
+        }
+        .top-image-container-home{
+            display: flex;
+            width: 90vw;
+            height:300px;
+            .image-box{
+                width: 100%;
+                height: 100%;
+                background-image: url("../../images/HomeInside.jpg");
+                background-position: center;
+                background-size: cover;
+                @include media-breakpoint-down(sm){
+                    background-size: cover;
+                    background-position: left;
+                }
+                @include media-breakpoint-up(xl){
+                    background-position:  45px top 90px ;
+                }
+            }         
+        }
+        .top-image-container-auto{
+            display: flex;
+            width: 90vw;
+            height:300px;
+            .image-box{
+                width: 100%;
+                height: 100%;
+                background-image: url("../../images/CarAccident_top.jpg");
+                background-position: center;
+                background-size: cover;
+                @include media-breakpoint-down(sm){
+                    background-size: cover;
+                    background-position: 55% 75%;
+                }
+                @include media-breakpoint-up(xl){
+                    background-position: 50% ;
+                }
+            }        
+        }
+        .top-image-container-life{
+            display: flex;
+            width: 90vw;
+            height:300px;
+            .image-box{
+                width: 100%;
+                height: 100%;
+                background-image: url("../../images/LifeInsurance-top.jpg");
+                background-position: center;
+                background-size: cover;
+                @include media-breakpoint-down(sm){
+                    background-size: cover;
+                    background-position: 74% 75%;
+                }
+                @include media-breakpoint-up(xl){
+                    background-position: 59% 15% ;
+                }
+            }        
+        }
+
         .home-insurance-div{
             width: 90vw;
 
@@ -34,15 +108,26 @@
                     color: white;
                     text-align: center;
                 }
-                a {
+                #insurance-number {
                     align-items: center;
-                    border: solid 3px $secondary;
+                    // border: solid 3px $secondary;
                     color: $secondary;
                     margin-bottom: 2rem;
+                    text-decoration: none;
                 }
-                a:hover {
+                #insurance-number:hover {
                     color: white;
+                    // background-color: $secondary;
+                    transition: background-color 0.9s ease, color 0.9s ease;
+                    text-decoration: underline;
+                }
+                .contact-us{
                     background-color: $secondary;
+                    color: white;
+                }
+                .contact-us:hover {
+                    color: $secondary;
+                    background-color: white;
                     transition: background-color 0.9s ease, color 0.9s ease;
                 }
             }

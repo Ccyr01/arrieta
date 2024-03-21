@@ -12,6 +12,7 @@
   transition: all 1s ease-out;
   display: flex;
   flex-direction: column;
+
   .container-fluid{
     background-color: black;
   }
@@ -41,6 +42,10 @@
       padding-top: 30px;
     }
   }
+  .insurance-products{
+    align-items: flex-start;
+  }
+  
   ul{
     width:100%;
     display: flex;

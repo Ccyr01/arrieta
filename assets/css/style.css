@@ -12358,10 +12358,97 @@ nav .container {
 
 .home-insurance .home-insurance-section {
   background-color: white;
-  margin-top: 200px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.home-insurance .home-insurance-section .top-image-container-commercial {
+  display: flex;
+  width: 90vw;
+  height: 300px;
+}
+.home-insurance .home-insurance-section .top-image-container-commercial .image-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/Commercial.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  .home-insurance .home-insurance-section .top-image-container-commercial .image-box {
+    background-position: 50% 30%;
+  }
+}
+.home-insurance .home-insurance-section .top-image-container-home {
+  display: flex;
+  width: 90vw;
+  height: 300px;
+}
+.home-insurance .home-insurance-section .top-image-container-home .image-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/HomeInside.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 575.98px) {
+  .home-insurance .home-insurance-section .top-image-container-home .image-box {
+    background-size: cover;
+    background-position: left;
+  }
+}
+@media (min-width: 1200px) {
+  .home-insurance .home-insurance-section .top-image-container-home .image-box {
+    background-position: 45px top 90px;
+  }
+}
+.home-insurance .home-insurance-section .top-image-container-auto {
+  display: flex;
+  width: 90vw;
+  height: 300px;
+}
+.home-insurance .home-insurance-section .top-image-container-auto .image-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/CarAccident_top.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 575.98px) {
+  .home-insurance .home-insurance-section .top-image-container-auto .image-box {
+    background-size: cover;
+    background-position: 55% 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .home-insurance .home-insurance-section .top-image-container-auto .image-box {
+    background-position: 50%;
+  }
+}
+.home-insurance .home-insurance-section .top-image-container-life {
+  display: flex;
+  width: 90vw;
+  height: 300px;
+}
+.home-insurance .home-insurance-section .top-image-container-life .image-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/LifeInsurance-top.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 575.98px) {
+  .home-insurance .home-insurance-section .top-image-container-life .image-box {
+    background-size: cover;
+    background-position: 74% 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .home-insurance .home-insurance-section .top-image-container-life .image-box {
+    background-position: 59% 15%;
+  }
 }
 .home-insurance .home-insurance-section .home-insurance-div {
   width: 90vw;
@@ -12391,15 +12478,24 @@ nav .container {
   color: white;
   text-align: center;
 }
-.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info a {
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info #insurance-number {
   align-items: center;
-  border: solid 3px #ed7766;
   color: #ed7766;
   margin-bottom: 2rem;
+  text-decoration: none;
 }
-.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info a:hover {
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info #insurance-number:hover {
   color: white;
+  transition: background-color 0.9s ease, color 0.9s ease;
+  text-decoration: underline;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info .contact-us {
   background-color: #ed7766;
+  color: white;
+}
+.home-insurance .home-insurance-section .home-insurance-div .home-insurance-info .contact-us:hover {
+  color: #ed7766;
+  background-color: white;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div {
@@ -12463,6 +12559,9 @@ nav .container {
   .sidebar-menu #close {
     padding-top: 30px;
   }
+}
+.sidebar-menu .insurance-products {
+  align-items: flex-start;
 }
 .sidebar-menu ul {
   width: 100%;
