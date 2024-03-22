@@ -12549,6 +12549,7 @@ nav .container {
 @media (max-width: 991.98px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
     margin-right: 0 !important;
+    margin-left: 0 !important;
   }
 }
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img img {
