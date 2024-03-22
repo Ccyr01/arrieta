@@ -105,6 +105,7 @@
                     font-weight: 350;
                 }
                 p{
+                    width: 75%;
                     color: white;
                     text-align: center;
                 }
@@ -136,26 +137,28 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 5rem;
-                @include media-breakpoint-down(md){
+                @include media-breakpoint-down(lg){
                     flex-direction: column;
                 }
                 .emergency-coverage{
-                    // width: 48%;
+                    @include media-breakpoint-up(xl){
+                        width: 80%;
+                    }  
                     h3{
+                        text-align: center;
                         color: $header-color;
                         font-weight: 800;
                     }
                     
                 } 
                 .emergency-coverage-img{
-                    // width:48%;
-                    width: 1200px;
-                    @include media-breakpoint-down(md){
-                        width: 100%
+                    @include media-breakpoint-up(xl){
+                        width: 80%;
                     }
-                    @include media-breakpoint-up(lg){
-                        flex-grow: 2;
+                    @include media-breakpoint-down(lg){
+                        margin-right: 0 !important;
                     }
+                    
                 }
                 .emergency-coverage-img img{
                     width: 100%;

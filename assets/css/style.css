@@ -12496,6 +12496,7 @@ nav .container {
   font-weight: 350;
 }
 .home-insurance .home-insurance-section .home-insurance-div .home-insurance-info p {
+  width: 75%;
   color: white;
   text-align: center;
 }
@@ -12525,26 +12526,29 @@ nav .container {
   justify-content: space-between;
   margin-top: 5rem;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div {
     flex-direction: column;
   }
 }
+@media (min-width: 1200px) {
+  .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage {
+    width: 80%;
+  }
+}
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage h3 {
+  text-align: center;
   color: #45bce5;
   font-weight: 800;
 }
-.home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
-  width: 1200px;
-}
-@media (max-width: 767.98px) {
+@media (min-width: 1200px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
-    width: 100%;
+    width: 80%;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 991.98px) {
   .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
-    flex-grow: 2;
+    margin-right: 0 !important;
   }
 }
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img img {
@@ -13201,11 +13205,12 @@ p.text-center {
 }
 .insurance-links-section .links-container .insurance-img:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 1px 1px rgba(0, 51, 160, 0.7);
-  transform: scale(1.1);
+  transform: scale(1.01);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 .insurance-links-section .links-container .insurance-img:hover h2 {
-  background-color: #0033a0;
+  background-color: #0E1941;
   color: white;
 }
 .insurance-links-section .links-container .home {

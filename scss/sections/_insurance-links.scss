@@ -60,11 +60,12 @@
     .insurance-img:hover {
       cursor: pointer;
       h2 {
-        background-color: $primary;
+        background-color: $dark-blue;
         color: white;
       }
-      box-shadow: 1px 1px 1px 1px rgba(0, 51, 160, 0.7);;
-      transform: scale(1.1);
+      transform: scale(1.01);
+      transition-duration: .5s;
+      transition-timing-function: ease;
     }
     .home {
       background-image: url("../../images/Home_texas_70.jpg");
