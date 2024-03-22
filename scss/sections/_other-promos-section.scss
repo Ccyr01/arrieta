@@ -165,8 +165,11 @@
       align-items: center;
     }
     .filing-a-claim-div {
-      width: 50%;
+      width: 70%;
       text-align: center;
+      @include media-breakpoint-down(sm){
+        width: 80%;
+      }
       p {
         color: white;
       }

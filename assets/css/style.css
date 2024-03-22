@@ -12542,6 +12542,11 @@ nav .container {
     width: 100%;
   }
 }
+@media (min-width: 992px) {
+  .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img {
+    flex-grow: 2;
+  }
+}
 .home-insurance .home-insurance-section .home-insurance-div .emergency-coverage-div .emergency-coverage-img img {
   width: 100%;
 }
@@ -13390,8 +13395,13 @@ p.text-center {
   align-items: center;
 }
 .contact-services-claims .contact-wrapper .filing-a-claim-div {
-  width: 50%;
+  width: 70%;
   text-align: center;
+}
+@media (max-width: 575.98px) {
+  .contact-services-claims .contact-wrapper .filing-a-claim-div {
+    width: 80%;
+  }
 }
 .contact-services-claims .contact-wrapper .filing-a-claim-div p {
   color: white;

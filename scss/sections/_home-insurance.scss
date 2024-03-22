@@ -153,6 +153,9 @@
                     @include media-breakpoint-down(md){
                         width: 100%
                     }
+                    @include media-breakpoint-up(lg){
+                        flex-grow: 2;
+                    }
                 }
                 .emergency-coverage-img img{
                     width: 100%;
