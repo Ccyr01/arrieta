@@ -63,6 +63,10 @@
         background-repeat: no-repeat;
         background-image: url("../../images/OscarArrietaLG.png");
         background-position: center;
+        @media screen and (max-width:1050px) {
+          background-size: contain;
+          background-position: center;
+        }
         @media screen and (max-width: 664px) {
           background-image: url('../../images/OscarArrieta.png');
         }

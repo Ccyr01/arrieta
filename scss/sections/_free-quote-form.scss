@@ -6,7 +6,7 @@
     width:100%;
     @include media-breakpoint-up(lg) {
       font-size: large;
-      padding: 0 10rem;
+      padding: 0 5rem;
     }
     @include media-breakpoint-down(sm) {
       font-size: medium;

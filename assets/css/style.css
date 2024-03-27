@@ -12041,6 +12041,12 @@ nav .container {
   background-image: url("../../images/OscarArrietaLG.png");
   background-position: center;
 }
+@media screen and (max-width: 1050px) {
+  .home .intro-section .intro-pic-container .intro-pic {
+    background-size: contain;
+    background-position: center;
+  }
+}
 @media screen and (max-width: 664px) {
   .home .intro-section .intro-pic-container .intro-pic {
     background-image: url("../../images/OscarArrieta.png");
@@ -12635,7 +12641,7 @@ nav .container {
 @media (min-width: 992px) {
   .free-quote-form-section {
     font-size: large;
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -12660,14 +12666,137 @@ html {
 }
 
 .outer1 {
-  margin-top: 200px;
+  margin-top: 50px;
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .outer1 {
+    flex-direction: column-reverse;
+  }
+}
+.outer1 .inner1 {
+  margin: 1.5rem 1.5rem;
+  padding: 1rem 1rem;
+}
+.outer1 .inner1 .description-box-contact {
+  padding: 0 3rem;
+}
+.outer1 .inner1 .description-box-contact a {
+  text-decoration: none;
+}
+.outer1 .inner1 .description-box-contact a:hover {
+  color: #ed7766;
+  text-decoration: underline;
+}
+.outer1 .inner1-contact {
+  color: #0E1941;
+}
+.outer1 .inner1-contact .free-quote-form-section button[type=submit] {
+  background-color: #0E1941;
+  color: white;
+}
+.outer1 .inner2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #0E1941;
+  color: white;
+  height: auto;
+}
+.outer1 .inner2 .inner2-pic {
+  background-image: url("../../images/Oscar_AboutUs.jpg");
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 767.98px) {
+  .outer1 .inner2 .inner2-pic {
+    aspect-ratio: 1.1/1;
+  }
+}
+.outer1 .inner2 .inner-text {
+  display: flex;
+  flex-direction: column;
+}
+.outer1 .inner2 .description-box-quotes {
+  margin: 0 0.5rem 2rem;
+  background-color: #0033a0;
+  font-size: 20px;
+}
+@media (max-width: 991.98px) {
+  .outer1 .inner2 .description-box-quotes {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+}
+.outer1 .inner2 .description-box-quotes a {
+  color: white;
+  text-decoration: none;
+}
+.outer1 .inner2 .description-box-quotes i {
+  color: red;
+}
+.outer1 .inner2 h2 {
+  color: white;
 }
 
 .flex-map-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #0E1941;
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+}
+@media (max-width: 767.98px) {
+  .flex-map-container {
+    padding-bottom: 100%;
+  }
+}
+.flex-map-container .row {
+  background-color: rgb(0, 0, 1);
+}
+.flex-map-container .card-inside .card {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 1px solid #45bce5;
+}
+.flex-map-container .card-inside .card:hover h5 {
+  color: white;
+}
+.flex-map-container .card-inside .card:hover i {
+  color: white;
+}
+.flex-map-container .card-inside .card:hover p {
+  color: white;
+}
+.flex-map-container .card-inside .card:first-child {
+  border-left: none;
+}
+.flex-map-container .card-inside .card:not(:first-child) {
+  border-left: 1px solid #45bce5;
+}
+.flex-map-container .card-inside .card .card-body {
+  background-color: rgb(0, 0, 1);
+  color: #45bce5;
+}
+@media (max-width: 575.98px) {
+  .flex-map-container .card-inside .card .card-body h5 {
+    font-size: 16px;
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .flex-map-container .card-inside .card .card-body h5 {
+    font-size: 13px;
+  }
+}
+.flex-map-container .carousel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white; /* Example text color */
+  z-index: 2; /* Ensure the carousel appears above the map */
 }
 .flex-map-container .find-location {
   width: 100%;
@@ -12737,7 +12866,6 @@ body {
 
 .map-link {
   border: none;
-  margin: 10px;
   transition: all 500ms ease;
 }
 .map-link:hover {
@@ -12780,23 +12908,19 @@ p.text-center {
   line-height: 2; /* Adjust the line height as needed for better readability */
 }
 
-@media screen and (max-width: 1100px) {
-  .my-3 .map iframe {
-    width: 250px;
-    aspect-ratio: 1/1;
-  }
+.my-3 .map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-@media screen and (max-width: 1100px) and (max-width: 700px) {
-  .my-3 .map iframe {
-    width: 400px;
-    aspect-ratio: 1/1;
-  }
+
+.feedback {
+  height: 300px;
 }
-@media screen and (max-width: 1100px) and (max-width: 400px) {
-  .my-3 .map iframe {
-    width: 280px;
-    aspect-ratio: 1/1;
-  }
+.feedback .feedback-boxes {
+  width: 100%;
 }
 
 .location-boxes .card-body {

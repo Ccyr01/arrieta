@@ -6,13 +6,144 @@ html {
 }
 
 .outer1{
-    margin-top: 200px;
+    margin-top: 50px;
+    display: flex;
+    @include media-breakpoint-down(md){
+      flex-direction: column-reverse;
+    }
+
+    .inner1{
+      margin: 1.5rem 1.5rem;
+      padding: 1rem 1rem;
+      .description-box-contact{
+        padding: 0 3rem;
+        a{
+          text-decoration: none;
+        }
+        a:hover{
+          color: $secondary;
+          text-decoration: underline;
+        }
+      }
+    }
+    .inner1-contact{
+      color: $dark-blue;
+      .free-quote-form-section{
+        button[type="submit"]{
+          background-color: $dark-blue;
+          color:white;
+        }
+      }
+    }
+    .inner2{
+      display: flex;
+      flex-direction: column;
+      background-color: $dark-blue;
+      color: white;
+      height: auto;
+
+      .inner2-pic{
+        background-image: url("../../images/Oscar_AboutUs.jpg");
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1/1;
+        @include media-breakpoint-down(md){
+          aspect-ratio: 1.1/1;
+        }
+      }
+      .inner-text{
+        display: flex;
+        flex-direction: column;
+      }
+      .description-box-quotes{
+        margin: 0 .5rem 2rem;
+        background-color: $primary;
+        font-size: 20px;
+        @include media-breakpoint-down(lg){
+          font-size: 16px;
+          padding-left: 10px;
+        }
+        a{
+          color:white;
+          text-decoration: none;
+        }
+        i{
+          color:red;
+        }
+      }
+      h2{
+        color:white;
+      }
+    }
 }
 .flex-map-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $dark-blue;
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+
+  @include media-breakpoint-down(md){
+    padding-bottom: 100%;
+  }
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // background-color: $dark-blue;
+    .row{
+      background-color: rgba(0,0,0.5);
+    }
+    .card-inside{
+
+      .card{
+        border: none;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border-left: 1px solid $header-color;
+        &:hover{
+          h5{
+            color: white;
+          }
+          i{
+            color: white;
+          }
+          p{
+            color:white;
+          }
+        }
+        &:first-child {
+          border-left: none;
+        }
+        &:not(:first-child) {
+          border-left: 1px solid $header-color;
+        }
+        
+        
+    
+
+        .card-body{
+          background-color: rgba(0,0,0.5);
+          color: $header-color;
+          h5{
+            @include media-breakpoint-down(sm){
+              font-size: 16px;
+              padding: 0 !important;
+            }
+            @media screen and (max-width: 300px) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .carousel {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color: white; /* Example text color */
+      z-index: 2; /* Ensure the carousel appears above the map */
+  }
     .find-location{
       width: 100%;
       background-color: white;
@@ -76,6 +207,7 @@ html {
         }
     }
     
+    
 }
 
 h2 {
@@ -89,7 +221,6 @@ body {
 
 .map-link {
   border: none;
-  margin: 10px;
   transition: all 500ms ease;
   &:hover {
     background-color: $primary;
@@ -136,24 +267,43 @@ p.text-center {
   font-size: 20px; /* Adjust the font size as needed */
   line-height: 2; /* Adjust the line height as needed for better readability */
 }
+// .my-3{
+//   @media screen and (max-width: 1100px){
+//     .map{
+//       iframe{
+//         width: 250px;
+//         aspect-ratio: 1/1;
+//         @media screen and (max-width: 700px){
+//           width: 400px;
+//           aspect-ratio: 1/1;
+//         }
+//         @media screen and (max-width: 400px){
+//           width: 280px;
+//           aspect-ratio: 1/1;
+//         }
+//       }
+//     }
+//   }
+  
+  
+// }
 .my-3{
-  @media screen and (max-width: 1100px){
-    .map{
-      iframe{
-        width: 250px;
-        aspect-ratio: 1/1;
-        @media screen and (max-width: 700px){
-          width: 400px;
-          aspect-ratio: 1/1;
-        }
-        @media screen and (max-width: 400px){
-          width: 280px;
-          aspect-ratio: 1/1;
-        }
-      }
+  .map{
+    iframe{
+      left:0;
+      top:0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
     }
   }
-  
-  
 }
+.feedback{
+  height: 300px;
+
+  .feedback-boxes{
+    width: 100%;
+  }
+}
+
 
